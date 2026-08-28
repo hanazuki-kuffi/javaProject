@@ -100,35 +100,49 @@ public class Main {
 //        car.brand = "Tesla";
 //    }
 
-    public static void printstudentList() {
-        String[] students = { "John",
-                "Sam",
-                "Bob",
-                "Kuffi",
-                "Franky" };
-        int studentCount = students.length;
-        System.out.println("Всего в классе: " + studentCount + " учеников: ");
-
-        for (int i = 0; i < studentCount; i++) {
-            System.out.println(students[i]);
-        }
-    }
+//    public static void printstudentList() {
+//        String[] students = { "John",
+//                "Sam",
+//                "Bob",
+//                "Kuffi",
+//                "Franky" };
+//        int studentCount = students.length;
+//        System.out.println("Всего в классе: " + studentCount + " учеников: ");
+//
+//        for (int i = 0; i < studentCount; i++) {
+//            System.out.println(students[i]);
+//        }
+//    }
+//
+//
+//    public static void main(String[] args) {
+//        int result = add(2, 4);
+//        System.out.println("2 + 4 = " + result);
+//
+//        result = add(222 + 444, 444 + 222);
+//        System.out.println("такое такое число в итоге: " + result);
+//
+//        result = add(add(222, 444), add(444, 222));
+//        System.out.println("а если так выходит: " + result);
+//    }
+//
+//
+//    public static int add(int a, int b) {
+//        return a + b;
+//    }
 
 
     public static void main(String[] args) {
-        int result = add(2, 4);
-        System.out.println("2 + 4 = " + result);
-
-        result = add(222 + 444, 444 + 222);
-        System.out.println("такое такое число в итоге: " + result);
-
-        result = add(add(222, 444), add(444, 222));
-        System.out.println("а если так выходит: " + result);
+        int result = doubleIt(add(13 + 2, doubleIt(5))); // (15 + (5*2) = 10 = 15 + 10 = 25) 25 * 2(doubleIt) = 50
+        System.out.println(result);
     }
-
 
     public static int add(int a, int b) {
         return a + b;
+    }
+
+    public static int doubleIt(int number) {
+        return number * 2;
     }
 
 
