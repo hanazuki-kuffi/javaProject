@@ -132,9 +132,9 @@ public class Main {
 //    }
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int result = doubleIt(add(13 + 2, doubleIt(5))); // (15 + (5*2) = 10 = 15 + 10 = 25) 25 * 2(doubleIt) = 50
-        System.out.println(result);
+//        System.out.println(result);
     }
 
     public static int add(int a, int b) {
@@ -145,8 +145,23 @@ public class Main {
         return number * 2;
     }
 
+     */
 
 
+
+
+    public static void main(String[] args) {
+
+        int temperatureTeapot = 24;
+
+        if (temperatureTeapot > 25) {
+            System.out.println("It's too much hot 🥵");
+        } else if (temperatureTeapot < 15) {
+            System.out.println("It's too much cold 🥶");
+        } else {
+            System.out.println("It's warm ☺️");
+        }
+    }
 
 }
 
