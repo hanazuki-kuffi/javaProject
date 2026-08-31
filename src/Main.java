@@ -149,19 +149,40 @@ public class Main {
 
 
 
+//
+//    public static void main(String[] args) {
+
+//        int temperatureTeapot = 24;
+//
+//        if (temperatureTeapot > 25) {
+////            System.out.println("It's too much hot 🥵");
+//        } else if (temperatureTeapot < 15) {
+////            System.out.println("It's too much cold 🥶");
+//        } else {
+////            System.out.println("It's warm ☺️");
+//        }
+//    }
 
     public static void main(String[] args) {
+        int grade = 100;
 
-        int temperatureTeapot = 24;
+        if (grade >= 90) {
 
-        if (temperatureTeapot > 25) {
-            System.out.println("It's too much hot 🥵");
-        } else if (temperatureTeapot < 15) {
-            System.out.println("It's too much cold 🥶");
-        } else {
-            System.out.println("It's warm ☺️");
+            System.out.println("Отлично(5)");
+        }
+        else if (grade >= 75 && grade <= 89) {
+
+            System.out.println("Хорошо(4)");
+        }
+
+        else if (grade >= 60 && grade <= 74) {
+
+            System.out.println("Удовлетворительно(3)");
+        }
+        else if (grade < 60) {
+
+            System.out.println("Пересдача");
         }
     }
-
 }
 
