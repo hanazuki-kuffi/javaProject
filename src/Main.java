@@ -207,18 +207,18 @@ public class Main {
     }
 
      */
-    public static void main(String[] args) {
-        int hour = 14;
-
-        if (0 <= hour && 5 >= hour) {
-            System.out.println("Ночь");
-            System.out.println("спи бля");
-        } else if (6 <= hour && 11 >= hour) {
-            System.out.println("Утро");
-        } else if (12 <= hour && 17 >= hour) {
-            System.out.println("День");
-        } else if (18 <= hour && 23 >= hour) {
-            System.out.println("Вечер");
-        }
-    }
-}
+//    public static void main(String[] args) {
+//        int hour = 14;
+//
+//        if (0 <= hour && 5 >= hour) {
+//            System.out.println("Ночь");
+//            System.out.println("спи бля");
+//        } else if (6 <= hour && 11 >= hour) {
+//            System.out.println("Утро");
+//        } else if (12 <= hour && 17 >= hour) {
+//            System.out.println("День");
+//        } else if (18 <= hour && 23 >= hour) {
+//            System.out.println("Вечер");
+//        }
+//    }
+//}
