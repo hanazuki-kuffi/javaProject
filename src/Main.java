@@ -11,7 +11,6 @@ public class Main {
 //    }
 
 
-
 //    public static void main(String[] args) {
 //
 //        boolean isMore = 4 > 3;
@@ -148,7 +147,6 @@ public class Main {
      */
 
 
-
 //
 //    public static void main(String[] args) {
 
@@ -159,7 +157,8 @@ public class Main {
 //        } else if (temperatureTeapot < 15) {
 ////            System.out.println("It's too much cold 🥶");
 //        } else {
-////            System.out.println("It's warm ☺️");
+
+    /// /            System.out.println("It's warm ☺️");
 //        }
 //    }
 
@@ -189,22 +188,37 @@ public class Main {
 */
 
 
-//    public static void main(String[] args) {
-//        int doublePurchaseAmount = 5000;
-//
-//        if (doublePurchaseAmount > 10000) {
-//            System.out.println("Скидка 15%");
-//        }
-//        else if (5000 <= doublePurchaseAmount && 10000 >= doublePurchaseAmount) {
-//
-//            System.out.println("Скидка 10%");
-//        }
-//        else if (1000 <= doublePurchaseAmount && 4999 >= doublePurchaseAmount) {
-//
-//            System.out.println("Скидка 5%");
-//        } else {
-//            System.out.println("Скидки нет");
-//        }
-//    }
+    /* public static void main(String[] args) {
+        int doublePurchaseAmount = 5000;
 
+        if (doublePurchaseAmount > 10000) {
+            System.out.println("Скидка 15%");
+        }
+        else if (5000 <= doublePurchaseAmount && 10000 >= doublePurchaseAmount) {
+
+            System.out.println("Скидка 10%");
+        }
+        else if (1000 <= doublePurchaseAmount && 4999 >= doublePurchaseAmount) {
+
+            System.out.println("Скидка 5%");
+        } else {
+            System.out.println("Скидки нет");
+        }
+    }
+
+     */
+    public static void main(String[] args) {
+        int hour = 14;
+
+        if (0 <= hour && 5 >= hour) {
+            System.out.println("Ночь");
+            System.out.println("спи бля");
+        } else if (6 <= hour && 11 >= hour) {
+            System.out.println("Утро");
+        } else if (12 <= hour && 17 >= hour) {
+            System.out.println("День");
+        } else if (18 <= hour && 23 >= hour) {
+            System.out.println("Вечер");
+        }
+    }
 }
