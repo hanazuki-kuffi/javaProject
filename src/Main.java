@@ -221,4 +221,19 @@ public class Main {
 //            System.out.println("Вечер");
 //        }
 //    }
-//}
+
+
+    public static void main(String[] args) {
+        int age = 11;
+
+        if (0 >= age || 120 <= age) {
+            System.out.println("Некорректный возраст");
+        } else if (age < 12) {
+            System.out.println("Ребёнок");
+        } else if (12 <= age && age <= 17) {
+            System.out.println("Подросток");
+        } else {
+            System.out.println("Взрослый");
+        }
+    }
+}
