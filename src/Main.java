@@ -163,7 +163,7 @@ public class Main {
 //        }
 //    }
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         int grade = 100;
 
         if (grade >= 90) {
@@ -184,5 +184,27 @@ public class Main {
             System.out.println("Пересдача");
         }
     }
-}
 
+
+*/
+
+
+    public static void main(String[] args) {
+        int doublePurchaseAmount = 5000;
+
+        if (doublePurchaseAmount > 10000) {
+            System.out.println("Скидка 15%");
+        }
+        else if (5000 <= doublePurchaseAmount && 10000 >= doublePurchaseAmount) {
+
+            System.out.println("Скидка 10%");
+        }
+        else if (1000 <= doublePurchaseAmount && 4999 >= doublePurchaseAmount) {
+
+            System.out.println("Скидка 5%");
+        } else {
+            System.out.println("Скидки нет");
+        }
+    }
+
+}
