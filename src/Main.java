@@ -223,17 +223,29 @@ public class Main {
 //    }
 
 
-    public static void main(String[] args) {
-        int age = 11;
+//    public static void main(String[] args) {
+//        int age = 11;
+//
+//        if (0 >= age || 120 <= age) {
+//            System.out.println("Некорректный возраст");
+//        } else if (age < 12) {
+//            System.out.println("Ребёнок");
+//        } else if (12 <= age && age <= 17) {
+//            System.out.println("Подросток");
+//        } else {
+//            System.out.println("Взрослый");
+//        }
+//    }
 
-        if (0 >= age || 120 <= age) {
-            System.out.println("Некорректный возраст");
-        } else if (age < 12) {
-            System.out.println("Ребёнок");
-        } else if (12 <= age && age <= 17) {
-            System.out.println("Подросток");
-        } else {
-            System.out.println("Взрослый");
+    public static void main(String[] args) {
+        String signal = "yellow";
+
+        if (signal.equals("green")) {
+            System.out.println("Иди!🟢");
+        } else if (signal.equals("red")) {
+            System.out.println("Стой!🔴");
+        } else if (signal.equals("yellow")) {
+            System.out.println("Приготовься!🟡");
         }
     }
 }
