@@ -149,7 +149,7 @@ public class Main {
 
 //
 //    public static void main(String[] args) {
-
+//
 //        int temperatureTeapot = 24;
 //
 //        if (temperatureTeapot > 25) {
@@ -157,56 +157,49 @@ public class Main {
 //        } else if (temperatureTeapot < 15) {
 ////            System.out.println("It's too much cold 🥶");
 //        } else {
-
-    /// /            System.out.println("It's warm ☺️");
+//
+//            System.out.println("It's warm ☺️");
 //        }
 //    }
 
-   /* public static void main(String[] args) {
-        int grade = 100;
-
-        if (grade >= 90) {
-
-            System.out.println("Отлично(5)");
-        }
-        else if (grade >= 75 && grade <= 89) {
-
-            System.out.println("Хорошо(4)");
-        }
-
-        else if (grade >= 60 && grade <= 74) {
-
-            System.out.println("Удовлетворительно(3)");
-        }
-        else if (grade < 60) {
-
-            System.out.println("Пересдача");
-        }
-    }
+//   public static void main(String[] args) {
+//       int grade = 100;
+//
+//       if (grade >= 90) {
+//
+//           System.out.println("Отлично(5)");
+//       } else if (grade >= 75 && grade <= 89) {
+//
+//           System.out.println("Хорошо(4)");
+//       } else if (grade >= 60 && grade <= 74) {
+//
+//           System.out.println("Удовлетворительно(3)");
+//       } else if (grade < 60) {
+//           System.out.println("Пересдача");
+//       }
+//   }
 
 
-*/
-
-
-    /* public static void main(String[] args) {
-        int doublePurchaseAmount = 5000;
-
-        if (doublePurchaseAmount > 10000) {
-            System.out.println("Скидка 15%");
-        }
-        else if (5000 <= doublePurchaseAmount && 10000 >= doublePurchaseAmount) {
-
-            System.out.println("Скидка 10%");
-        }
-        else if (1000 <= doublePurchaseAmount && 4999 >= doublePurchaseAmount) {
-
-            System.out.println("Скидка 5%");
-        } else {
-            System.out.println("Скидки нет");
-        }
-    }
-
-     */
+//
+//     public static void main(String[] args) {
+//        int doublePurchaseAmount = 5000;
+//
+//        if (doublePurchaseAmount > 10000) {
+//            System.out.println("Скидка 15%");
+//        }
+//        else if (5000 <= doublePurchaseAmount && 10000 >= doublePurchaseAmount) {
+//
+//            System.out.println("Скидка 10%");
+//        }
+//        else if (1000 <= doublePurchaseAmount && 4999 >= doublePurchaseAmount) {
+//
+//            System.out.println("Скидка 5%");
+//        } else {
+//            System.out.println("Скидки нет");
+//        }
+//    }
+//
+//
 //    public static void main(String[] args) {
 //        int hour = 14;
 //
@@ -221,8 +214,8 @@ public class Main {
 //            System.out.println("Вечер");
 //        }
 //    }
-
-
+//
+//
 //    public static void main(String[] args) {
 //        int age = 11;
 //
@@ -236,16 +229,23 @@ public class Main {
 //            System.out.println("Взрослый");
 //        }
 //    }
+//
+//    public static void main(String[] args) {
+//        String signal = "yellow";
+//
+//        if (signal.equals("green")) {
+//            System.out.println("Иди!🟢");
+//        } else if (signal.equals("red")) {
+//            System.out.println("Стой!🔴");
+//        } else if (signal.equals("yellow")) {
+//            System.out.println("Приготовься!🟡");
+//        }
+//    }
+//}
 
-    public static void main(String[] args) {
-        String signal = "yellow";
-
-        if (signal.equals("green")) {
-            System.out.println("Иди!🟢");
-        } else if (signal.equals("red")) {
-            System.out.println("Стой!🔴");
-        } else if (signal.equals("yellow")) {
-            System.out.println("Приготовься!🟡");
-        }
+//    public static void main(String[] args) {
+//        int brownSugar;
+//
+//        System.out.println(brownSugar);
+//        }
     }
-}

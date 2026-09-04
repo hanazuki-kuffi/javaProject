@@ -23,6 +23,6 @@ public class Task {
         double cornFlakes;
         cornFlakes = 78.7;
         cornFlakes = cornFlakes;
-        System.out.println(cornFlakes);
+        System.out.println(10 + 12 + 10);
     }
 }
