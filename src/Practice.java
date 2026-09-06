@@ -2,6 +2,7 @@ public class Practice {
     public static void main(String[] args) {
         practice1();
         practice2();
+        practice4();
     }
 
 
@@ -20,8 +21,27 @@ public class Practice {
         int gigabytes = 64;
         int megabytesPerGigabyte = gigabytes * 1024; // 65536
         int gigabytesToMegabytes = megabytes / gigabytes; // 1000
-        boolean isMore = megabytesPerGigabyte > gigabytesToMegabytes;
-            System.out.println(isMore);
+        boolean isMbMore = megabytesPerGigabyte > gigabytesToMegabytes;
+            System.out.println(isMbMore);
         }
+
+//        public static void practice3() {
+//
+//        int answer1 = 3;
+//        int answer2 = 2;
+//        int answer3 = 1;
+//
+//            System.out.println("Результат проверки вопроса 1:");
+//
+//
+//        }
+
+    public static void practice4() {
+        String pixelCat = "Пиксель — хороший кот!";
+        boolean isGoodCat = pixelCat.equals("Пиксель — хороший кот!");
+
+        System.out.println(isGoodCat);
+
+    }
 
 }
