@@ -10,6 +10,9 @@ public class Task {
         task6();
         task7();
         task8();
+        task9();
+        task10();
+        task11();
     }
 
 
@@ -78,9 +81,26 @@ public class Task {
 
     
     public static void task9() {
-            double tenges = 35000; // Напечатайте значение
+        double tenges = 35000; // Напечатайте значение
+        System.out.println("Сейчас у вас на счёте " + tenges + " тенге");
 
     }
+
+    public static void task10() {
+        double tenges = 1500002.7;
+        double rateUSD = 463.8;
+        double dollars = tenges / rateUSD;
+        System.out.println("У вас на счету " + tenges + " тенге." + " В долларах это " + dollars + " долларов." + " Так держать!.");
+    }
+
+
+    public static void task11() {
+        int x = -5;
+        boolean isNegative = x < 0;
+        System.out.println("Значение переменной isNegative = " + isNegative);
+    }
+
+
 }
 
 
