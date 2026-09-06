@@ -76,9 +76,7 @@ public class Task {
 
     }
 
-
-
-
+    
     public static void task9() {
             double tenges = 35000; // Напечатайте значение
 
