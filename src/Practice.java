@@ -20,9 +20,9 @@ public class Practice {
 
         int megabytes = 64000;
         int gigabytes = 64;
-        int megabytesPerGigabyte = gigabytes * 1024; // 65536
-        int gigabytesToMegabytes = megabytes / gigabytes; // 62.5
-        boolean isMbMore = megabytesPerGigabyte >= gigabytesToMegabytes;
+        int megabytesPerGigabyte = 1024;
+        int gigabytesToMegabyte = gigabytes * megabytesPerGigabyte;
+        boolean isMbMore = megabytes >= gigabytesToMegabyte; // 64000 >= 65536
             System.out.println(isMbMore);
         }
 
