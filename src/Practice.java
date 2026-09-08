@@ -21,8 +21,8 @@ public class Practice {
         int megabytes = 64000;
         int gigabytes = 64;
         int megabytesPerGigabyte = gigabytes * 1024; // 65536
-        int gigabytesToMegabytes = megabytes / gigabytes; // 1000
-        boolean isMbMore = megabytesPerGigabyte > gigabytesToMegabytes;
+        int gigabytesToMegabytes = megabytes / gigabytes; // 62.5
+        boolean isMbMore = megabytesPerGigabyte >= gigabytesToMegabytes;
             System.out.println(isMbMore);
         }
 
@@ -41,9 +41,6 @@ public class Practice {
             System.out.println("Результат проверки вопроса 2: " + answerNumberTwo);
             System.out.println("Результат проверки вопроса 3: " + answerNumberThree);
 
-
-
-
         }
 
     public static void practice4() {
@@ -53,5 +50,4 @@ public class Practice {
         System.out.println(isGoodCat);
 
     }
-
 }
