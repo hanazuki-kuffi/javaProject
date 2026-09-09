@@ -90,7 +90,7 @@ public class Task {
         double tenges = 1500002.7;
         double rateUSD = 463.8;
         double dollars = tenges / rateUSD;
-        System.out.println("У вас на счету " + tenges + " тенге." + " В долларах это " + dollars + " долларов." + " Так держать!.");
+        System.out.println("У вас на счету " + tenges + " тенге. В долларах это " + dollars + " долларов.Так держать!.");
     }
 
 

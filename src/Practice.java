@@ -4,44 +4,45 @@ public class Practice {
         practice2();
         practice3();
         practice4();
+        practice5();
     }
 
 
-        public static void practice1() {
+    public static void practice1() {
 
-            double rateUSD = 444.06;
-            double tenge = 124356.5;
+        double rateUSD = 444.06;
+        double tenge = 124356.5;
 
-            System.out.println("Отличный курс доллора - рекомендую купить!");
-            System.out.println("Ваши сбережения в доллорах: " + tenge / rateUSD);
-        }
+        System.out.println("Отличный курс доллора - рекомендую купить!");
+        System.out.println("Ваши сбережения в доллорах: " + tenge / rateUSD);
+    }
 
-        public static void practice2() {
+    public static void practice2() {
 
         int megabytes = 64000;
         int gigabytes = 64;
         int megabytesPerGigabyte = 1024;
         int gigabytesToMegabyte = gigabytes * megabytesPerGigabyte;
         boolean isMbMore = megabytes >= gigabytesToMegabyte; // 64000 >= 65536
-            System.out.println(isMbMore);
-        }
+        System.out.println(isMbMore);
+    }
 
 
-        public static void practice3() {
+    public static void practice3() {
 
         int answer1 = 3; // Ответ на 1 вопрос      ПРАВИЛЬНЫЙ ВАРИАНТ: 2
         int answer2 = 2; // Ответ на 2 вопрос      ПРАВИЛЬНЫЙ ВАРИАНТ: любой кроме 4
         int answer3 = 1; // Ответ на 3 вопрос      ПРАВИЛЬНЫЙ ВАРИАНТ: 1
 
-            boolean answerNumberOne = answer1 == 2;
-            boolean answerNumberTwo = answer2 != 4;
-            boolean answerNumberThree = answer3 == 1;
+        boolean answerNumberOne = answer1 == 2;
+        boolean answerNumberTwo = answer2 != 4;
+        boolean answerNumberThree = answer3 == 1;
 
-            System.out.println("Результат проверки вопроса 1: " + answerNumberOne);
-            System.out.println("Результат проверки вопроса 2: " + answerNumberTwo);
-            System.out.println("Результат проверки вопроса 3: " + answerNumberThree);
+        System.out.println("Результат проверки вопроса 1: " + answerNumberOne);
+        System.out.println("Результат проверки вопроса 2: " + answerNumberTwo);
+        System.out.println("Результат проверки вопроса 3: " + answerNumberThree);
 
-        }
+    }
 
     public static void practice4() {
         String pixelCat = "Пиксель — хороший кот!";
@@ -49,5 +50,24 @@ public class Practice {
 
         System.out.println(isGoodCat);
 
+    }
+
+    public static void practice5() {
+
+        String color = "Рыжий";
+        int age = 1;
+        int weight = 500;
+
+        boolean isColor = ((color.equals("Рыжий") || color.equals("Рыже-белый")) && !color.equals("В крапинку"));
+        boolean isAge = age < 2;
+        boolean isWeight = weight > 100;
+        boolean isFluffy = true;
+
+        if (isColor && isAge) {
+            if (isWeight || isFluffy)
+            System.out.println("Берем хомяка домой!");
+        } else {
+            System.out.println("Скип сразу!");
+        }
     }
 }
