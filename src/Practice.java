@@ -74,16 +74,20 @@ public class Practice {
 
 
     public static void practice6() {
-        double moneyBeforeSalary = 15000.0;
+        double moneyBeforeSalary = 140000.0;
 
-        if (moneyBeforeSalary < 15_000) {
+        if (moneyBeforeSalary <= 15_000) {
             System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
-        } else if (moneyBeforeSalary < 50_000) {
+        } else if (moneyBeforeSalary <= 50_000) {
             System.out.println("Окей, пора в Макдак!");
         } else if (moneyBeforeSalary > 50_000 && moneyBeforeSalary < 150_000) {
             System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
         } else {
             System.out.println("Класс! Заказывайте крабов!");
         }
+    }
+
+    public static void practice7() {
+
     }
 }
