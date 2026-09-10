@@ -6,6 +6,7 @@ public class Practice {
         practice4();
         practice5();
         practice6();
+        practice7();
     }
 
 //
@@ -88,6 +89,22 @@ public class Practice {
     }
 
     public static void practice7() {
+        double tenges = 124356.5;
+        double rateUSD = 444.06;
+        double rateEUR = 489.32;
+        double rateJPY = 3.12; // Курс японской иены
 
+        String currency = "DKK";
+        System.out.println("Вы конвертируете тенге в " + currency);
+
+        if (currency.equals("USD")) {
+            System.out.println("Ваши сбережения в долларах: " + tenges / rateUSD);
+        } else if (currency.equals("EUR")) {
+            System.out.println("Ваши сбережения в евро: " + tenges / rateEUR);
+        } else if (currency.equals("JPY")) {
+            System.out.println("Ваши сбережения в иенах: " + tenges / rateJPY);
+        } else {
+            System.out.println("Валюта не поддерживается.");
+        }
     }
 }
