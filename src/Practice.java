@@ -110,13 +110,13 @@ public class Practice {
     }
 
     public static void practice8() {
-        double moneyBeforeSalary = 250_000.0; // Количество денег до зарплаты
-        int daysBeforeSalary = 14;
+        double moneyBeforeSalary = 150_000.0; // Количество денег до зарплаты
+        int daysBeforeSalary = 17;
 
         if (moneyBeforeSalary < 15_000) {
             System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
         } else if (moneyBeforeSalary < 50_000) {
-            if (daysBeforeSalary < 10) {
+            if (daysBeforeSalary < 10) { // а почему  здесь все полноценно стоит сразу?
                 System.out.println("Окей, пора в Макдак!");
             } else {
                 System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
