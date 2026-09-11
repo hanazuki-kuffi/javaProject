@@ -7,6 +7,7 @@ public class Practice {
         practice5();
         practice6();
         practice7();
+        practice8();
     }
 
 //
@@ -107,4 +108,32 @@ public class Practice {
             System.out.println("Валюта не поддерживается.");
         }
     }
+
+    public static void practice8() {
+        double moneyBeforeSalary = 250_000.0; // Количество денег до зарплаты
+        int daysBeforeSalary = 14;
+
+        if (moneyBeforeSalary < 15_000) {
+            System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
+        } else if (moneyBeforeSalary < 50_000) {
+            if (daysBeforeSalary < 10) {
+                System.out.println("Окей, пора в Макдак!");
+            } else {
+                System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
+            }
+        } else if (moneyBeforeSalary < 150_000) {
+           if (daysBeforeSalary < 10) {
+               System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
+           } else {
+                System.out.println("Окей, пора в Макдак!");
+            }
+        } else {
+            if (daysBeforeSalary < 10) {
+                System.out.println("Класс! Заказывайте крабов!");
+            } else {
+                System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
+            }
+        }
+    }
 }
+
