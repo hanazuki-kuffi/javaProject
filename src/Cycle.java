@@ -81,7 +81,7 @@ public class Cycle {
 
     public static void example9() {
         int number = 1;
-        while (number <= 100) {
+        while (number <= 15) {
             if (number % 3 == 0) {
                 System.out.println("Number divided by 3: " + number);
             }
