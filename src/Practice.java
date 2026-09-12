@@ -1,13 +1,19 @@
 public class Practice {
     public static void main(String[] args) {
-        practice1();
-        practice2();
-        practice3();
-        practice4();
-        practice5();
-        practice6();
-        practice7();
-        practice8();
+//        practice1();
+//        practice2();
+//        practice3();
+//        practice4();
+//        practice5();
+//        practice6();
+//        practice7();
+//        practice8();
+//        practice9();
+//        practice10();
+//        practice11();
+//        practice12();
+        practice13();
+
     }
 
 //
@@ -78,11 +84,11 @@ public class Practice {
     public static void practice6() {
         double moneyBeforeSalary = 140000.0;
 
-        if (moneyBeforeSalary <= 15_000) {
+        if (moneyBeforeSalary < 15_000) {
             System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
-        } else if (moneyBeforeSalary <= 50_000) {
+        } else if (moneyBeforeSalary < 50_000) {
             System.out.println("Окей, пора в Макдак!");
-        } else if (moneyBeforeSalary > 50_000 && moneyBeforeSalary < 150_000) {
+        } else if (moneyBeforeSalary < 150_000) {
             System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
         } else {
             System.out.println("Класс! Заказывайте крабов!");
@@ -133,6 +139,46 @@ public class Practice {
             } else {
                 System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
             }
+        }
+    }
+
+    public static void practice9() {
+        for (int i = -3; i <= 11; i += 1) {
+            System.out.println("Этаж " + i);
+        }
+    }
+
+    public static void practice10() {
+        for (int i = 1; i <= 17; i += 1) {
+            System.out.println(i + "-я овечка перепрыгнула через забор.");
+        }
+        System.out.println("Хомяки сыты, овцы целы. Можно отдохнуть!");
+    }
+
+    public static void practice11() {
+        System.out.println("Это первый этаж дома который построил Джек.");
+        for (int floor = 1; floor < 10; floor++) {
+            System.out.println("А это " + (floor+1) + " он на один выше, чем этаж " + floor);
+        }
+    }
+
+
+    public static void practice12() {
+        int secondBeforeStart = 70;
+
+        for (int i = secondBeforeStart; i >= 0; i -= 7) {
+            System.out.println("До старта SpaceY осталось " + i);
+        }
+    }
+
+    public static void practice13() {
+        int days = 30;
+        int moneyPerDay = 200;
+        int sum = 0;
+
+        for (int i = 1; i <= days; i ++) {
+            sum += moneyPerDay;
+            System.out.println("День " + i + " Уже " + sum + " тенге.");
         }
     }
 }
