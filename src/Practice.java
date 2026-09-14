@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
 //        practice1();
@@ -180,6 +182,17 @@ public class Practice {
             sum += moneyPerDay;
             System.out.println("День " + i + " Уже " + sum + " тенге.");
         }
+    }
+
+    public static void practice14() {
+
+        double rateUSD = 444.06;
+        double rateEUR = 489.32;
+        double rateJPY = 3.12;
+
+        Scanner scanner = new Scanner(System.in);
+
+
     }
 }
 
