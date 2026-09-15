@@ -15,6 +15,7 @@ public class Practice {
 //        practice11();
 //        practice12();
         practice13();
+        practice14();
 
     }
 
@@ -215,13 +216,31 @@ public class Practice {
             } else {
                 System.out.println("Валюта не поддерживается.");
             }
-
+        } else if (command.equals("advice")) {
+            if (moneyBeforeSalary < 15_000) {
+                System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
+            } else if (moneyBeforeSalary < 50_000) {
+                if (daysBeforeSalary < 10) {
+                    System.out.println("Окей, пора в Макдак!");
+                } else {
+                    System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
+                }
+            } else if (moneyBeforeSalary < 150_000) {
+                if (daysBeforeSalary < 10) {
+                    System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
+                } else {
+                    System.out.println("Окей, пора в Макдак!");
+                }
+            } else {
+                if (daysBeforeSalary < 10) {
+                    System.out.println("Класс! Заказывайте крабов!");
+                } else {
+                    System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место.");
+                }
+            }// Здесь нужно давать советы
+        } else {
+            System.out.println("Извините, такой команды пока нет.");
         }
-        }
-
-
-
-
     }
 }
 
