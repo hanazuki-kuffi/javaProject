@@ -192,6 +192,35 @@ public class Practice {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Сколько денег у вас осталось до зарплаты?");
+        double moneyBeforeSalary = scanner.nextDouble();
+
+        System.out.println("Сколько дней до зарплаты?");
+        int daysBeforeSalary = scanner.nextInt();
+
+        System.out.println("Введите команду. Доступные команды: convert и advice.");
+        String command = scanner.next();
+
+
+        if (command.equals("convert")) {
+            String currency = "USD";
+            System.out.println("Вы хотите конвертировать тенге в " + currency);
+
+            if (currency.equals("USD")) {
+                System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
+            } else if (currency.equals("EUR")) {
+                System.out.println("Ваши сбережения в евро: " + moneyBeforeSalary / rateEUR);
+            } else if (currency.equals("JPY")) {
+                System.out.println("Ваши сбережения в иенах: " + moneyBeforeSalary / rateJPY);
+            } else {
+                System.out.println("Валюта не поддерживается.");
+            }
+
+        }
+        }
+
+
+
 
     }
 }
