@@ -16,7 +16,10 @@ public class Practice {
 //        practice12();
 //        practice13();
 //        practice14();
-        practice15();
+//        practice15();
+//        practice16();
+        practice17();
+//        practice18();
 
     }
 
@@ -298,6 +301,43 @@ public class Practice {
             }
         } else {
             System.out.println("Извините, такой команды пока нет.");
+        }
+    }
+//    public static void practice16() {
+//        int money = 2500;
+//        int foodPerMoney = 500;
+//        int days = 0;
+//
+//        for (int a = money; a) {
+//            for (int i = days; i <= 15; i -= 3)
+//
+//            System.out.println("На" + days + " - й день останется" + money + "тенге.");
+//
+//        }
+//        System.out.println("Денег хватит на " + days + " дней.");
+//    }
+
+    public static void practice17() {
+        for (int i = 1; i <= 30; i++) {
+            System.out.println("День " + i);
+
+            for (int a = 1; a <= 3; a++) {
+                System.out.println("Серия " + a);
+            }
+        }
+        System.out.println("Ура! Вы прокачали и Java, и английский!");
+
+    }
+
+    public static void practice18() {
+        int days = 3;
+        int run = 2;
+
+        for (int i = 1; i <= days; i++) {
+            System.out.println("Day" + i);
+            for (int j = 1; j <= run; j++) {
+                System.out.println("Пробежка" + j);
+            }
         }
     }
 }
