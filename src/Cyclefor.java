@@ -1,6 +1,7 @@
 public class Cyclefor {
     public static void main(String[] args) {
-        cycle1();
+//        cycle1();
+        cycle2();
     }
 
     public static void cycle1() {
@@ -13,5 +14,19 @@ public class Cyclefor {
             System.out.println("На " + days + "-й день останется " + money + "тенге.");
         }
         System.out.println("Денег хватит на " + days + " дней.");
+    }
+
+    public static void cycle2() {
+
+        for (int day = 1; day <= 30; day++) {
+            System.out.println("День " + day);
+
+            int startEpisode = 1;
+            int endEpidose = 3;
+
+            for (int j = startEpisode; j <= endEpidose; j++) {
+                System.out.println("Серия " + j);
+            }
+        }
     }
 }
