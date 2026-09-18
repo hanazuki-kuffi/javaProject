@@ -18,8 +18,9 @@ public class Practice {
 //        practice14();
 //        practice15();
 //        practice16();
-        practice17();
+//        practice17();
 //        practice18();
+        practice19();
 
     }
 
@@ -348,13 +349,10 @@ public class Practice {
 
         for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 50; j++) {
-                int currentFlat
+                int currentFlat = (floorNumber - 1) * flatsNumber + 1;
+                System.out.println("Этаж " + i + " квартира " + currentFlat + " — доставлено.");
+            }
             }
         }
-
-
-
-
     }
-}
 
