@@ -13,7 +13,8 @@ public class Cycle {
 //        example8();
 //        example9();
 //        example10();
-        example11();
+//        example11();
+        example12();
 
     }
 
@@ -160,6 +161,15 @@ public class Cycle {
             }
 
             System.out.println("Ваша оценка должна быть в диапазоне от 1 до 3");
+        }
+    }
+
+    public static void example12() {
+
+        int a = 0;
+        while (a != 5) {
+            System.out.println("Currently number: " + a);
+            a++;
         }
     }
 }
