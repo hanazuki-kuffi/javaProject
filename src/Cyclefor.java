@@ -26,7 +26,14 @@ public class Cyclefor {
 
             for (int j = startEpisode; j <= endEpidose; j++) {
                 System.out.println("Серия " + j);
+
+                startEpisode += 3; // как  я могу поменять значение
+                endEpidose += 3;
+
             }
+
         }
+
+        System.out.println("Ура! Вы прокачали и Java, и английский!");
     }
 }
