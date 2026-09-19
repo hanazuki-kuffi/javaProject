@@ -21,13 +21,13 @@ public class Cyclefor {
         for (int day = 1; day <= 30; day++) {
             System.out.println("День " + day);
 
-            int startEpisode = 1;
-            int endEpidose = 3;
+            int startEpisode = 1; // как  я могу менять значение с помощью переменные счетчиками
+            int endEpidose = 3; // как  я могу менять значение с помощью переменные счетчиками
 
             for (int j = startEpisode; j <= endEpidose; j++) {
                 System.out.println("Серия " + j);
 
-                startEpisode += 3; // как  я могу поменять значение
+                startEpisode += 3;
                 endEpidose += 3;
 
             }
