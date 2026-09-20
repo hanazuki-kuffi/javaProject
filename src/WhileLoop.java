@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class WhileLoop {
 
     public static void main(String[] args) {
-        whileloop1();
+//        whileloop1();
+        whileloop2();
     }
 
     public static void whileloop1() {
@@ -34,16 +35,15 @@ public class WhileLoop {
         int userInput = -1; // Это нужно, чтобы цикл запустился, если Random выдаст 0
         System.out.println("Я загадал число от 0 до 1000.");
 
-        while (userInput <= randomInt) {
-            System.out.println("Ваш ход:"); // Напишите условие цикла для запуска игры
+        while (userInput != randomInt) {
+            System.out.println("Ваш ход: "); // Напишите условие цикла для запуска игры
             userInput = scanner.nextInt(); // В этой переменной должен сохраняться ввод пользователя
             if (userInput < randomInt) { // Условие проверяется в цикле
                 System.out.println("Меньше");
-            } else {
+            } else if (userInput > randomInt) {
                 System.out.println("Больше");
             }
-            // Печатаем, когда число угадано
-            System.out.println("Вы великолепны! Именно это я загадал.");
         }
+        System.out.println("Вы великолепны! Именно это я загадал.");
     }
 }
