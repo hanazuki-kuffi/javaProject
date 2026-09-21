@@ -7,7 +7,8 @@ public class WhileLoop {
     public static void main(String[] args) {
 //        whileloop1();
 //        whileloop2();
-        whileloop3();
+//        whileloop3();
+        whileloop4();
     }
 
     public static void whileloop1() {
@@ -56,15 +57,100 @@ public class WhileLoop {
 
         System.out.println("Введите числа для суммирования (0 для остановки): ");
         inputNumber = scanner.nextInt();
-        while (true) {
+        while (inputNumber != 0) {
 
             sum = sum + inputNumber;
             System.out.println("Введите числа для суммирования (0 для остановки): ");
             inputNumber = scanner.nextInt();
-             if (inputNumber == 0) {
-                 break;
-             }
-        }
+            }
         System.out.println("Сумма введенных чисел: " + sum);
+        }
+
+
+        public static void whileloop4() {
+            Scanner scanner = new Scanner(System.in);
+            Random random = new Random();
+
+            int secretCode;
+            int pilotInput;
+
+
+            System.out.println("Ракета SpaceY на орбите!");
+            secretCode = random.nextInt(100);
+            pilotInput = random.nextInt(100);
+
+            while (pilotInput != secretCode) {
+                System.out.println("Ракета SpaceY на орбите!");
+                pilotInput = random.nextInt(100);
+
+                }
+            System.out.println("Пилот угадал число! Летим домой!");
+        }
+
+        public static void whileloop5() {
+            double rateUSD = 450;
+            double rateEUR = 500;
+            double rateJPY = 3.14;
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Сколько денег у вас осталось до зарплаты?");
+            double moneyBeforeSalary = scanner.nextDouble();
+
+            System.out.println("Сколько дней до зарплаты?");
+            int daysBeforeSalary = scanner.nextInt();
+
+            while (true)//настройте бесконечный цикл здесь
+                System.out.println("Что вы хотите сделать? ");
+                System.out.println("1 - Конвертировать валюту");
+                System.out.println("2 - Получить совет");
+                System.out.println("0 - Выход"); // Новый пункт меню, осталось только реализовать логику
+
+            int command = scanner.nextInt();
+
+            if (command == 1) {
+                System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR или 3 - JPY.");
+                int currency = ...;
+
+                if (rateUSD == currency) {
+                    System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
+                } else if (rateEUR == currency) {
+                    System.out.println("Ваши сбережения в евро: " + moneyBeforeSalary / rateEUR);
+                } else if (rateJPY == currency) {
+                    System.out.println("Ваши сбережения в йенах: " + moneyBeforeSalary / rateJPY);
+                } else {
+                    System.out.println("Валюта не поддерживается.");
+                }
+
+            } else if (command == 2) {
+                if (moneyBeforeSalary < 15_000) {
+                    System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
+                } else if (moneyBeforeSalary < 50_000) {
+                    if (daysBeforeSalary < 10) {
+                        System.out.println("Окей, пора в Макдак!");
+                    } else {
+                        System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
+                    }
+                } else if (moneyBeforeSalary < 150_000) {
+                    if (daysBeforeSalary < 10) {
+                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
+                    } else {
+                        System.out.println("Окей, пора в Макдак!");
+                    }
+                } else {
+                    if (daysBeforeSalary < 10) {
+                        System.out.println("Отлично! Заказывайте крабов!");
+                    } else {
+                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
+                    }
+                }
+            } else if (command == 0) {
+                System.out.println("Выход");
+                break;
+            } else {
+                System.out.println("Извините, такой команды пока нет.");
+            }
+        ...
+        }
     }
-}
+    }
