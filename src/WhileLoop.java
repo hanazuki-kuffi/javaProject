@@ -6,7 +6,8 @@ public class WhileLoop {
 
     public static void main(String[] args) {
 //        whileloop1();
-        whileloop2();
+//        whileloop2();
+        whileloop3();
     }
 
     public static void whileloop1() {
@@ -45,5 +46,25 @@ public class WhileLoop {
             }
         }
         System.out.println("Вы великолепны! Именно это я загадал.");
+    }
+
+    public static void whileloop3() {
+
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int inputNumber;
+
+        System.out.println("Введите числа для суммирования (0 для остановки): ");
+        inputNumber = scanner.nextInt();
+        while (true) {
+
+            sum = sum + inputNumber;
+            System.out.println("Введите числа для суммирования (0 для остановки): ");
+            inputNumber = scanner.nextInt();
+             if (inputNumber == 0) {
+                 break;
+             }
+        }
+        System.out.println("Сумма введенных чисел: " + sum);
     }
 }
