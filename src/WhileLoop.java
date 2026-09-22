@@ -8,7 +8,8 @@ public class WhileLoop {
 //        whileloop1();
 //        whileloop2();
 //        whileloop3();
-        whileloop4();
+//        whileloop4();
+        whileloop5();
     }
 
     public static void whileloop1() {
@@ -110,13 +111,14 @@ public class WhileLoop {
 
             if (command == 1) {
                 System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR или 3 - JPY.");
-                int currency = ...;
 
-                if (rateUSD == currency) {
+                 String currency = "";
+
+                if (currency.equals("USD")) {
                     System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
-                } else if (rateEUR == currency) {
+                } else if (currency.equals("EUR")) {
                     System.out.println("Ваши сбережения в евро: " + moneyBeforeSalary / rateEUR);
-                } else if (rateJPY == currency) {
+                } else if (currency.equals("JPY")) {
                     System.out.println("Ваши сбережения в йенах: " + moneyBeforeSalary / rateJPY);
                 } else {
                     System.out.println("Валюта не поддерживается.");
@@ -150,7 +152,5 @@ public class WhileLoop {
             } else {
                 System.out.println("Извините, такой команды пока нет.");
             }
-        ...
         }
-    }
     }
