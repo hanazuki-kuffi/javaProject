@@ -63,56 +63,56 @@ public class WhileLoop {
             sum = sum + inputNumber;
             System.out.println("Введите числа для суммирования (0 для остановки): ");
             inputNumber = scanner.nextInt();
-            }
-        System.out.println("Сумма введенных чисел: " + sum);
         }
+        System.out.println("Сумма введенных чисел: " + sum);
+    }
 
 
-        public static void whileloop4() {
-            Scanner scanner = new Scanner(System.in);
-            Random random = new Random();
+    public static void whileloop4() {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-            int secretCode;
-            int pilotInput;
+        int secretCode;
+        int pilotInput;
 
 
+        System.out.println("Ракета SpaceY на орбите!");
+        secretCode = random.nextInt(100);
+        pilotInput = random.nextInt(100);
+
+        while (pilotInput != secretCode) {
             System.out.println("Ракета SpaceY на орбите!");
-            secretCode = random.nextInt(100);
             pilotInput = random.nextInt(100);
 
-            while (pilotInput != secretCode) {
-                System.out.println("Ракета SpaceY на орбите!");
-                pilotInput = random.nextInt(100);
-
-                }
-            System.out.println("Пилот угадал число! Летим домой!");
         }
+        System.out.println("Пилот угадал число! Летим домой!");
+    }
 
-        public static void whileloop5() {
-            double rateUSD = 450;
-            double rateEUR = 500;
-            double rateJPY = 3.14;
+    public static void whileloop5() {
+        double rateUSD = 450;
+        double rateEUR = 500;
+        double rateJPY = 3.14;
 
-            Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Сколько денег у вас осталось до зарплаты?");
-            double moneyBeforeSalary = scanner.nextDouble();
+        System.out.println("Сколько денег у вас осталось до зарплаты?");
+        double moneyBeforeSalary = scanner.nextDouble();
 
-            System.out.println("Сколько дней до зарплаты?");
-            int daysBeforeSalary = scanner.nextInt();
+        System.out.println("Сколько дней до зарплаты?");
+        int daysBeforeSalary = scanner.nextInt();
 
-            while (true)//настройте бесконечный цикл здесь
-                System.out.println("Что вы хотите сделать? ");
-                System.out.println("1 - Конвертировать валюту");
-                System.out.println("2 - Получить совет");
-                System.out.println("0 - Выход"); // Новый пункт меню, осталось только реализовать логику
+        while (true) {//настройте бесконечный цикл здесь
+            System.out.println("Что вы хотите сделать? ");
+            System.out.println("1 - Конвертировать валюту");
+            System.out.println("2 - Получить совет");
+            System.out.println("0 - Выход"); // Новый пункт меню, осталось только реализовать логику
 
             int command = scanner.nextInt();
 
             if (command == 1) {
                 System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR или 3 - JPY.");
 
-                 String currency = "";
+                String currency = "";
 
                 if (currency.equals("USD")) {
                     System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
@@ -154,3 +154,4 @@ public class WhileLoop {
             }
         }
     }
+}
