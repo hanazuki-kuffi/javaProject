@@ -125,33 +125,33 @@ public class WhileLoop {
                 }
 
             } else if (command == 2) {
-                if (moneyBeforeSalary < 15_000) {
-                    System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
-                } else if (moneyBeforeSalary < 50_000) {
-                    if (daysBeforeSalary < 10) {
-                        System.out.println("Окей, пора в Макдак!");
-                    } else {
-                        System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
-                    }
-                } else if (moneyBeforeSalary < 150_000) {
-                    if (daysBeforeSalary < 10) {
-                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
-                    } else {
-                        System.out.println("Окей, пора в Макдак!");
-                    }
-                } else {
-                    if (daysBeforeSalary < 10) {
-                        System.out.println("Отлично! Заказывайте крабов!");
-                    } else {
-                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
-                    }
-                }
-            } else if (command == 0) {
-                System.out.println("Выход");
-                break;
-            } else {
-                System.out.println("Извините, такой команды пока нет.");
-            }
-        }
-    }
-}
+//                if (moneyBeforeSalary < 15_000) {
+//                    System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
+//                } else if (moneyBeforeSalary < 50_000) {
+//                    if (daysBeforeSalary < 10) {
+//                        System.out.println("Окей, пора в Макдак!");
+//                    } else {
+//                        System.out.println("Сегодня лучше поесть дома. Экономьте и вы дотянете до зарплаты!");
+//                    }
+//                } else if (moneyBeforeSalary < 150_000) {
+//                    if (daysBeforeSalary < 10) {
+//                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
+//                    } else {
+//                        System.out.println("Окей, пора в Макдак!");
+//                    }
+//                } else {
+//                    if (daysBeforeSalary < 10) {
+//                        System.out.println("Отлично! Заказывайте крабов!");
+//                    } else {
+//                        System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
+//                    }
+//                }
+//            } else if (command == 0) {
+//                System.out.println("Выход");
+//                break;
+//            } else {
+//                System.out.println("Извините, такой команды пока нет.");
+//            }
+//        }
+//    }
+//}
