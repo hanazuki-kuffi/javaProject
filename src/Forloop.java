@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class Forloop {
     public static void main(String[] args) {
-        loop1();
+//        loop1();
 //        loop2();
 //        loop3();
 //        loop4();
+//        loop5();
+//        loop6();
+//        loop7();
+//        loop8();
+        loop9();
     }
 
     public static void loop1() {
@@ -66,5 +73,70 @@ public class Forloop {
 
         System.out.println("Хороший темп, так держать!");
         System.out.println("Отлично позанимались сегодня! Вы - молодец!");
+    }
+
+
+    public static void loop5() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите N: ");
+        int numberInput = scanner.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= numberInput; i++) {
+
+            sum = sum + i;
+//            System.out.println(sum);
+        }
+        System.out.println("Сумма: " + sum);
+    }
+
+    public static void loop6() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int number = scanner.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+
+            int sum = number * i;
+            System.out.println( number + " * " + i + " = " + sum);
+        }
+    }
+
+    public static void loop7() {
+
+        for ( int i = 1; i <= 50; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static void loop8() {
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void loop9() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите N: ");
+        int number = scanner.nextInt();
+
+        int sum = 1;
+        for (int i = 1; i <= number; i++) {
+            sum = sum * i;
+
+        }
+        System.out.println("Факториал: " + sum);
+    }
+
+    public static void loop10() {
+
+        for (char symbol = "*";  )
     }
 }
