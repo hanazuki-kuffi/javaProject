@@ -10,7 +10,10 @@ public class Forloop {
 //        loop6();
 //        loop7();
 //        loop8();
-        loop9();
+//        loop9();
+//        loop10();
+//        loop11();
+        loop12();
     }
 
     public static void loop1() {
@@ -136,7 +139,42 @@ public class Forloop {
     }
 
     public static void loop10() {
+        String symbol = "";
+        for (int i = 1; i <= 5; i++) {
+           System.out.println(symbol =  symbol + "*");
+        }
+    }
 
-        for (char symbol = "*";  )
+    public static void loop11() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите N: ");
+        int number = scanner.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 1) {
+                sum += i;
+            }
+
+        }
+        System.out.println("Сумма нечётных чисел: " + sum);
+    }
+
+    public static void loop12() {
+
+        Scanner scanner =  new Scanner(System.in);
+
+        System.out.println("Введите А: ");
+        int numberA = scanner.nextInt();
+
+        System.out.println("Введите B: ");
+        int numberB = scanner.nextInt();
+        int sum = 0;
+
+        for (int i = numberA; i <= numberB; i++) {
+            sum = sum + i;
+        }
+        System.out.println("Общая сумма  А и B: " + sum);
     }
 }
