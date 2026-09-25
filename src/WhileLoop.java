@@ -75,23 +75,26 @@ public class WhileLoop {
         int secretCode;
         int pilotInput;
 
+        System.out.println(secretCode = random.nextInt(100));
 
-        System.out.println("Ракета SpaceY на орбите!");
-        secretCode = random.nextInt(100);
-        pilotInput = random.nextInt(100);
+        while (true) {
 
-        while (pilotInput != secretCode) {
+
             System.out.println("Ракета SpaceY на орбите!");
             pilotInput = random.nextInt(100);
+            pilotInput = scanner.nextInt();
 
+            if (pilotInput == secretCode) {
+                System.out.println("Пилот угадал число! Летим домой!");
+                break;
+            }
         }
-        System.out.println("Пилот угадал число! Летим домой!");
     }
 
     public static void whileloop5() {
-        double rateUSD = 450;
-        double rateEUR = 500;
-        double rateJPY = 3.14;
+        double rateUSD = 450; // это курс валют
+        double rateEUR = 500; // это курс валют
+        double rateJPY = 3.14; // это курс валют
 
         Scanner scanner = new Scanner(System.in);
 
@@ -101,24 +104,26 @@ public class WhileLoop {
         System.out.println("Сколько дней до зарплаты?");
         int daysBeforeSalary = scanner.nextInt();
 
-        while (true) {//настройте бесконечный цикл здесь
+        while (true) {                                      //настройте бесконечный цикл здесь
             System.out.println("Что вы хотите сделать? ");
             System.out.println("1 - Конвертировать валюту");
             System.out.println("2 - Получить совет");
             System.out.println("0 - Выход"); // Новый пункт меню, осталось только реализовать логику
-
             int command = scanner.nextInt();
+
 
             if (command == 1) {
                 System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR или 3 - JPY.");
 
-                String currency = "";
 
-                if (currency.equals("USD")) {
+                int currency = scanner.nextInt();
+
+
+                if (currency == 1) {
                     System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
-                } else if (currency.equals("EUR")) {
+                } else if (currency == 2) {
                     System.out.println("Ваши сбережения в евро: " + moneyBeforeSalary / rateEUR);
-                } else if (currency.equals("JPY")) {
+                } else if (currency == 3) {
                     System.out.println("Ваши сбережения в йенах: " + moneyBeforeSalary / rateJPY);
                 } else {
                     System.out.println("Валюта не поддерживается.");
