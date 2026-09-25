@@ -141,7 +141,8 @@ public class Forloop {
     public static void loop10() {
         String symbol = "";
         for (int i = 1; i <= 5; i++) {
-           System.out.println(symbol =  symbol + "*");
+            symbol =  symbol + "*";
+           System.out.println(symbol);
         }
     }
 
@@ -177,4 +178,5 @@ public class Forloop {
         }
         System.out.println("Общая сумма  А и B: " + sum);
     }
+
 }
