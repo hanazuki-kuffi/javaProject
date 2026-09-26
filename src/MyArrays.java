@@ -10,7 +10,8 @@ public class MyArrays {
 //        arrays5();
 //        arrays6();
 //        arrays7();
-        arrays8();
+//        arrays8();
+        arrays9();
     }
 
 
@@ -122,4 +123,21 @@ public class MyArrays {
 
 
     }
+
+
+    public static void arrays9() {
+
+        String[] currencies = new String[4];
+
+        currencies[0] = "hello";
+        currencies[1] = "bye";
+        currencies[2] = "good";
+        currencies[3] = "bad";
+
+
+        System.out.println(Arrays.toString(currencies));
+
+    }
+
+
 }
