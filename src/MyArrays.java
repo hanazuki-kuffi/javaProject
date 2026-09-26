@@ -11,7 +11,10 @@ public class MyArrays {
 //        arrays6();
 //        arrays7();
 //        arrays8();
-        arrays9();
+//        arrays9();
+//        arrays10();
+//        arrays11();
+        arrays12();
     }
 
 
@@ -137,6 +140,36 @@ public class MyArrays {
 
         System.out.println(Arrays.toString(currencies));
 
+    }
+
+    public static void arrays10() {
+
+        double[] expenses = new double[3];
+
+        expenses[0] = 100;
+        expenses[1] = 250;
+        expenses[2] = 1000;
+
+        System.out.println(Arrays.toString(expenses));
+
+    }
+
+    public static void arrays11() {
+
+        int[] numbers = {1, 2, 3, 6, 2, 7, 23, 65, 23, 75, 212, 1000};
+
+        int numberCount = numbers.length;
+
+        System.out.println(numberCount);
+    }
+
+    public static void arrays12() {
+
+        String[] currencies = {"USD", "EUR", "RUB", "KZT", "THB", "UAH", "MAD", "SGD", "AMD", "DKK", "CZK", "SEK", "TRY", "CHF"};
+
+        for (int i = 0; i < currencies.length; i++) {
+            System.out.println("Поддерживаемая валюта: " + currencies[i]);
+        }
     }
 
 
