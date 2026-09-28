@@ -81,7 +81,7 @@ public class WhileLoop {
 
 
             System.out.println("Ракета SpaceY на орбите!");
-            pilotInput = random.nextInt(100);
+//            pilotInput = random.nextInt(100);
             pilotInput = scanner.nextInt();
 
             if (pilotInput == secretCode) {
