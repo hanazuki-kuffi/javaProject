@@ -21,7 +21,7 @@ public class MyArrays {
 //        arrays15();
 //        arrays16();
 //        arrays17();
-//        arrays18();
+        arrays18();
     }
 
 
@@ -285,7 +285,7 @@ public class MyArrays {
 
     public static void arrays18() {
 
-        double[] expenses = new double[7];
+        double[] expenses = new double[0];
 
         double rateUSD = 450;
         double rateEUR = 500;
@@ -351,7 +351,7 @@ public class MyArrays {
                 System.out.println("Введите размер траты:");
                 int userExpense = scanner.nextInt(); // Получите из консоли значение расходов и сохраните в переменной expense
 
-                expenses[userDayInput - 1] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
+                expenses[0] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
                                             // Не забудьте прибавить новое значение к уже существующим тратам
                 System.out.println("Значение сохранено!");
 
