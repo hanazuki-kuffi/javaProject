@@ -351,7 +351,7 @@ public class MyArrays {
                 System.out.println("Введите размер траты:");
                 int userExpense = scanner.nextInt(); // Получите из консоли значение расходов и сохраните в переменной expense
 
-                expenses[userDayInput] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
+                expenses[userDayInput - 1] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
                                             // Не забудьте прибавить новое значение к уже существующим тратам
                 System.out.println("Значение сохранено!");
 
