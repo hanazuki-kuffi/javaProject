@@ -21,7 +21,7 @@ public class MyArrays {
 //        arrays15();
 //        arrays16();
 //        arrays17();
-        arrays18();
+//        arrays18();
     }
 
 
