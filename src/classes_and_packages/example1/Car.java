@@ -1,4 +1,4 @@
-package classes_and_packages.example_1;
+package classes_and_packages.example1;
 
 public class Car {
     public String brand;

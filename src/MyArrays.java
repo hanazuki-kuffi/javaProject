@@ -20,7 +20,8 @@ public class MyArrays {
 //        arrays14();
 //        arrays15();
 //        arrays16();
-        arrays17();
+//        arrays17();
+        arrays18();
     }
 
 
@@ -284,7 +285,7 @@ public class MyArrays {
 
     public static void arrays18() {
 
-        double[] expenses;
+        double[] expenses = new double[7];
 
         double rateUSD = 450;
         double rateEUR = 500;
@@ -302,8 +303,9 @@ public class MyArrays {
             System.out.println("Что вы хотите сделать?");
             System.out.println("1 — Конвертировать валюту");
             System.out.println("2 — Получить совет");
-            ... // Допишите вывод нового пункта меню
+            System.out.println("3 — Ввести трату");
             System.out.println("0 — Выход");
+
 
             int command = scanner.nextInt();
 
@@ -343,17 +345,14 @@ public class MyArrays {
                     }
                 }
             } else if (command == 3) { // Ещё одно ветвление для обработки новой команды, допишите его условие
-                // Допишите код для печати сообщения для пользователя
-                // Текст сообщения: "За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?"
-                ...
-                // Получите из консоли день, за который пользователь хочет указать расходы
-                int day = ...
+                System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
+                int userDayInput = scanner.nextInt(); // Получите из консоли день, за который пользователь хочет указать расходы
+
                 System.out.println("Введите размер траты:");
-                // Получите из консоли значение расходов и сохраните в переменной expense
-                ...
-                // Сохраните полученное значение дневных трат в массив expenses
-                // Не забудьте прибавить новое значение к уже существующим тратам
-                ...
+                int userExpense = scanner.nextInt(); // Получите из консоли значение расходов и сохраните в переменной expense
+
+                expenses[userDayInput] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
+                                            // Не забудьте прибавить новое значение к уже существующим тратам
                 System.out.println("Значение сохранено!");
 
             } else if (command == 0) {

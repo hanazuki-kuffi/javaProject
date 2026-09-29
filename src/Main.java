@@ -1,5 +1,3 @@
-import classes_and_packages.example_1.Car;
-
 public class Main {
 //    public static void main(String[] args) {
 //        int number = 1;
