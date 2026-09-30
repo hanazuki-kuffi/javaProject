@@ -21,7 +21,8 @@ public class MyArrays {
 //        arrays15();
 //        arrays16();
 //        arrays17();
-        arrays18();
+//        arrays18();
+        arrays19();
     }
 
 
@@ -426,17 +427,21 @@ public class MyArrays {
             } else if (command == 3) {
                 System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
                 int day = scanner.nextInt();
+
                 System.out.println("Введите размер траты:");
                 double expense = scanner.nextDouble();
 
-				...// Уменьшите баланс на сумму введённой траты
-                ...// Сохраните трату в массив
+				double summ = moneyBeforeSalary - expense; // Уменьшите баланс на сумму введённой траты
+                expenses[0] = expense;// Сохраните трату в массив
 
-                System.out.println("Значение сохранено! Ваш текущий баланс в тенге: " + moneyBeforeSalary);
+                System.out.println("Значение сохранено! Ваш текущий баланс в тенге: " + summ);
 
-                ...// Проверьте текущее значение баланса — не опустилось ли оно ниже отметки в 5000 тенге
-                ...// Выведите предупреждение: "На вашем счету осталось совсем немного. Стоит начать экономить!"
-                ...
+                if (summ < 5000) {
+                    System.out.println("На вашем счету осталось совсем немного. Стоит начать экономить!");// Проверьте текущее значение баланса — не опустилось ли оно ниже отметки в 5000 тенге
+                } else {
+                    System.out.println(" ");
+                }
+
             } else if (command == 0) {
                 System.out.println("Выход");
                 break;
@@ -444,6 +449,5 @@ public class MyArrays {
                 System.out.println("Извините, такой команды пока нет.");
             }
         }
-    }
     }
 }
