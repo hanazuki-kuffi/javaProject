@@ -285,7 +285,7 @@ public class MyArrays {
 
     public static void arrays18() {
 
-        double[] expenses = new double[0];
+        double[] expenses = new double[7];
 
         double rateUSD = 450;
         double rateEUR = 500;
