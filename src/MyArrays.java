@@ -21,8 +21,8 @@ public class MyArrays {
 //        arrays15();
 //        arrays16();
 //        arrays17();
-//        arrays18();
-        arrays19();
+        arrays18();
+//        arrays19();
     }
 
 
@@ -352,8 +352,8 @@ public class MyArrays {
                 System.out.println("Введите размер траты:");
                 int userExpense = scanner.nextInt(); // Получите из консоли значение расходов и сохраните в переменной expense
 
-                expenses[0] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
-                                            // Не забудьте прибавить новое значение к уже существующим тратам
+                expenses[userDayInput - 1] = userExpense; // Сохраните полученное значение дневных трат в массив expenses
+//                expenses[userDayInput - 1] = expenses[userDayInput - 1] + userExpense;                          // Не забудьте прибавить новое значение к уже существующим тратам
                 System.out.println("Значение сохранено!");
 
             } else if (command == 0) {
@@ -450,4 +450,10 @@ public class MyArrays {
             }
         }
     }
+
+    public static void arrays20() {
+
+    }
+
+
 }
