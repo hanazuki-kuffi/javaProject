@@ -234,7 +234,7 @@ public class MyArrays {
 
     public static void arrays16() {
         // Объявите пустой массив трат за неделю (7 дней)
-        int[] expenses = new int[8];
+        int[] expenses = new int[7];
         Random random = new Random(); // Генерирует случайное число
 
         // Допишите условие цикла for, чтобы заполнить массив случайными тратами
@@ -244,7 +244,7 @@ public class MyArrays {
 
         for ( int i = 1;i <= 7; i++) {
             expenses[i] = random.nextInt(10000);
-            System.out.println("День " + i + ". Потрачено тенге: " + expenses[i]);
+            System.out.println("День " + (i + 1) + ". Потрачено тенге: " + expenses[i]);
 
             sum = sum + expenses[i];
         }
