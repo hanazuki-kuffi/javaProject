@@ -35,7 +35,7 @@ public class Robot {
 
         System.out.println("Из какого вы города?");
         String city = scanner.next();
-        System.out.println("Рад познакомиться, " + name + " из " + city + "!");
+//        System.out.println("Рад познакомиться, " + name + " из " + city + "!");
     }
 
     public static void sayHelloByTime() {

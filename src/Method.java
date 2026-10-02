@@ -6,7 +6,14 @@ public class Method {
 //        welcomeUserByName();
 //        sayHelloByTime();
 //        System.out.println(printSuccess());
-        printCity();
+//        printCity();
+//        double result = multiply();
+//        System.out.println("Result: " + multiply());
+//        System.out.println(sayHello());
+//        sayHello();
+
+        int result = doubleIt(add(13 + 2, doubleIt(5)));
+        System.out.println(result);
     }
     public static void welcomeUserByName() {  // Объявите метод welcomeUserByName Scanner scanner = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
@@ -39,6 +46,39 @@ public class Method {
     public static void printCity() {
 
         System.out.println("Я из Астаны! ");
+    }
+
+
+    public static double multiply() {
+        return 3.0 * 6.0;
+    }
+
+    public static String sayHello() {
+        String name = "Pixel";
+        return "Hello " + name + "!";
+    }
+
+    public static void findHighestGrossingFilm() {
+
+        String film1 = "Титаник";
+        int income1 =  2194;
+
+        String film2 = "Аватар";
+        int income2 =  2810;
+
+        String film3 = "Темный рыцарь";
+        int income3 =  1084;
+
+//        if ()
+
+    }
+
+    public static int add(int a, int b){
+        return a + b;
+    }
+
+    public static int doubleIt(int number) {
+        return number * 2;
     }
 }
 
