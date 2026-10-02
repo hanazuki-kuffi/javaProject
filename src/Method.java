@@ -11,8 +11,10 @@ public class Method {
 //        System.out.println("Result: " + multiply());
 //        System.out.println(sayHello());
 //        sayHello();
-        String name = "Byte";
-        sayHello();
+//        String name = "Byte";
+//        sayHello();
+
+
 
         int result = doubleIt(add(13 + 2, doubleIt(5)));
 //        System.out.println(result);
