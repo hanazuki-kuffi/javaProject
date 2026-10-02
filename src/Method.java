@@ -11,9 +11,11 @@ public class Method {
 //        System.out.println("Result: " + multiply());
 //        System.out.println(sayHello());
 //        sayHello();
+        String name = "Byte";
+        sayHello();
 
         int result = doubleIt(add(13 + 2, doubleIt(5)));
-        System.out.println(result);
+//        System.out.println(result);
     }
     public static void welcomeUserByName() {  // Объявите метод welcomeUserByName Scanner scanner = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
@@ -53,10 +55,10 @@ public class Method {
         return 3.0 * 6.0;
     }
 
-    public static String sayHello() {
-        String name = "Pixel";
-        return "Hello " + name + "!";
-    }
+//    public static String sayHello() {
+//        String name = "Pixel";
+//        return "Hello " + name + "!";
+
 
     public static void findHighestGrossingFilm() {
 
@@ -80,5 +82,11 @@ public class Method {
     public static int doubleIt(int number) {
         return number * 2;
     }
+
+    public static void sayHello() {
+        String name = "Pixel";
+        System.out.println("Hello " + name);
+    }
+
 }
 
