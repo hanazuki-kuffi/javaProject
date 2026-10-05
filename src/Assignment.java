@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Assignment {
 
     public static void main(String[] args) {
@@ -6,31 +8,28 @@ public class Assignment {
 //        String highestGrossingFilm = findHighestGrossingFilm();
 //        System.out.println("Самый кассовый фильм: " + highestGrossingFilm);
 
-        System.out.println("Наибольшее из чисел 3 и 5 = " + findMax(-7, -1));
+//        System.out.println("Наибольшее из чисел 3 и 5 = " + findMax(-7, -1));
+//        double[] expenses = {1772.5, 367.0, 120.6, 2150.2, 874.0, 1.0, 1459.4};
+//        double maxExpense = findMaxExpense(expenses); // Вызовите метод и присвойте maxExpense значение его результата
+//        System.out.println("Самая большая трата недели " + maxExpense);
+
+        String catName = "Pixel";
+        String hamsterName = "Byte";
+        sayHello(catName);
+        sayHello(hamsterName);
     }
 
-    public static String findHighestGrossingFilm() {
 
-        String film1 = "Титаник";
-        int income1 = 2194;
-        String film2 = "Аватар";
-        int income2 = 2810;
-        String film3 = "Тёмный рыцарь";
-        int income3 = 1084;
-
-
-        if (income1 > income2 && income1 > income3) {
-            return film1;
-        } else if (income2 > income1 && income2 > income3) {
-            return film2;
-        } else  {
-            return film3;
-        }
+    public static double findMaxExpense(double[] expenses) {
+        double maxExpense = 0;
+        for (int i = 0; i < expenses.length; i++) {
+            if (maxExpense < expenses[i]) {
+                maxExpense = expenses[i];
+            }
+        }return maxExpense;
     }
 
-    public static int findMax(int a, int b) {
-        if ( a > b) {
-            return a;
-        }return b;
+    public static void sayHello(String username) {
+        System.out.println("Привет " + username);
     }
 }
