@@ -13,10 +13,12 @@ public class Assignment {
 //        double maxExpense = findMaxExpense(expenses); // Вызовите метод и присвойте maxExpense значение его результата
 //        System.out.println("Самая большая трата недели " + maxExpense);
 
-        String catName = "Pixel";
-        String hamsterName = "Byte";
-        sayHello(catName);
-        sayHello(hamsterName);
+        printNumbers(new int[] {1, 2, 3, 4, 5, 6, 7, 8});
+
+//        String catName = "Pixel";
+//        String hamsterName = "Byte";
+//        sayHello(catName);
+//        sayHello(hamsterName);
     }
 
 
@@ -29,7 +31,14 @@ public class Assignment {
         }return maxExpense;
     }
 
-    public static void sayHello(String username) {
-        System.out.println("Привет " + username);
+    public static void printNumbers(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
     }
+//    public static void sayHello(String username) {
+//        System.out.println("Привет " + username);
+//    }
+
+
 }
