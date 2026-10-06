@@ -24,7 +24,8 @@ public class MyArrays {
 //        arrays18();
 //        arrays19();
 //        arrays20();
-        arrays21();
+//        arrays21();
+        arrays22();
     }
 
 
@@ -638,5 +639,25 @@ public class MyArrays {
                 System.out.println("Извините, такой команды пока нет.");
             }
         }
+    }
+
+    public static void arrays22() {
+
+        int[] nums = {7, -3, 9, -11, 18, 99, 2, 11};
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Вывести первые 3 элемента массива: " + nums[i]);
+        }
+
+        for (int i = 0; i < nums.length / 2; i++) {
+            System.out.println("Вывести первую половину массива: " + nums[i]);
+        }
+        int g = nums.length / 2;
+        for (int i = 0; i < nums.length / 2; i++) {
+            System.out.println("Вывести вторую половину массива: " + nums[g]);
+        }
+
+
+
     }
 }

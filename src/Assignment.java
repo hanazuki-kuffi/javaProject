@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Assignment {
 
@@ -14,6 +15,7 @@ public class Assignment {
 //        System.out.println("Самая большая трата недели " + maxExpense);
 
         printNumbers(new int[] {1, 2, 3, 4, 5, 6, 7, 8});
+//        printlnNumbers(List.of(1, 2, 3, 5));
 
 //        String catName = "Pixel";
 //        String hamsterName = "Byte";
@@ -36,6 +38,11 @@ public class Assignment {
             System.out.println(numbers[i]);
         }
     }
+//    public static void printlnNumbers(List numbers) {
+//        for (int i = 0; i < numbers.length; i++) {
+//            System.out.println(numbers[i]);
+//        }
+//    }
 //    public static void sayHello(String username) {
 //        System.out.println("Привет " + username);
 //    }
