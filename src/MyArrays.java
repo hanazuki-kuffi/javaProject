@@ -655,9 +655,18 @@ public class MyArrays {
         int g = nums.length / 2;
         for (int i = 0; i < nums.length / 2; i++) {
             System.out.println("Вывести вторую половину массива: " + nums[g]);
+            g++;
         }
+        int j = nums.length - 1;
+        for (int i = 1 ; i < j; i++) {
+            System.out.println("Вывести все элементы кроме первого и последнего: " + nums[i]);
 
+        }
+        int a = nums.length;
+        for (int i = 0 ; i < 3; i++) {
+            a = a - 1;
+            System.out.println("Вывести последние 3 элемента массива: " + nums[a]);
 
-
+        }
     }
 }
