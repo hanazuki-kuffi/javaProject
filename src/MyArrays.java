@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -666,7 +667,40 @@ public class MyArrays {
         for (int i = 0 ; i < 3; i++) {
             a = a - 1;
             System.out.println("Вывести последние 3 элемента массива: " + nums[a]);
-
         }
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("Вывести только чётные элементы массива по порядку: " + nums[i++]);
+        }
+        int negativeCount = 0;
+        int possitiveCount = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < 0) {
+                 negativeCount = negativeCount + 1;
+//                System.out.println("это отр число: " + negativeCount);
+            } else if (nums[i] > 0) {
+                possitiveCount = possitiveCount + 1;
+//                System.out.println("это полож число: " + possitiveCount);
+
+            }
+            else if (nums[i] == 0) {
+                continue;
+            }
+        }
+        System.out.println("количество отрицательных элементов: " + negativeCount);
+        System.out.println("количество положительных элементов: " + possitiveCount);
+
+        int maxValue = 0;
+        int minValue = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (maxValue < nums[i]) {
+                maxValue = nums[i];
+            }
+            else if ( minValue > nums[i]) {
+                minValue = nums[i];
+            }
+        }
+        System.out.println("Max value: " + maxValue);
+        System.out.println("Min value: " + minValue);
     }
 }
