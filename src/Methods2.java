@@ -1,3 +1,5 @@
+//#9- tasks
+
 import java.util.Scanner;
 
 public class Methods2 {
@@ -10,6 +12,9 @@ public class Methods2 {
 
             getMaxValue();
             getMinValue();
+            hamsterWeight();
+            getExpenses(new int[] {1, 2, 3, 4, 5});
+            getMycity();
         }
 
         public static void getMaxValue() {
@@ -42,9 +47,11 @@ public class Methods2 {
                 System.out.println("Самая маленькая трата за неделю " + minExpense);
             }
 
-        public static void
+        public static void hamsterWeight() {
+
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Что будем делать дальше? 1 - Читать код, 2 - Отдыхать.");
-            command = scanner.nextInt();
+            int command = scanner.nextInt();
 
             System.out.println("Сколько весит хомяк Байт?");
             int weight = scanner.nextInt();
@@ -55,18 +62,26 @@ public class Methods2 {
             } else {
                 System.out.println("Разгрузочный день. Пьём водичку, крутим колесо!");
             }
+        }
 
+
+        public static void getExpenses(int[] expenses) {
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Что будем делать дальше? 1 - Читать код, 2 - Отдыхать.");
-            command = scanner.nextInt();
+            int command = scanner.nextInt();
 
             double sum = 0;
             for (int i = 0; i < expenses.length; i++) {
                 sum = sum + expenses[i];
             }
             System.out.println("Сумма трат за неделю составила " + sum);
+        }
 
+
+        public static void getMycity() {
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Что будем делать дальше? 1 - Читать код, 2 - Отдыхать.");
-            command = scanner.nextInt();
+            int command = scanner.nextInt();
 
             String myLoveCity = "мой любимый город!";
             System.out.println("До свидания," + myLoveCity);

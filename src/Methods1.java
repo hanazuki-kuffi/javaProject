@@ -36,12 +36,12 @@ public class Methods1 {
             }
             // Печатаем рекомендации
             System.out.println("Придётся пересмотреть планы, вам не хватает " + lackMoney);
-            System.out.println("Рекомендуемые траты: "
-                    + "еда — " + ... + ", "
-                    + "сбережения — " + ... + ".");
-        } else {
-            System.out.println("В этом месяце дебет с кредитом сошлись!");
-            System.out.println("Свободных средств " + leftMoney);
-        }
-    }
+//            System.out.println("Рекомендуемые траты: "
+//                    + "еда — " + ... + ", "
+//                    + "сбережения — " + ... + ".");
+//        } else {
+//            System.out.println("В этом месяце дебет с кредитом сошлись!");
+//            System.out.println("Свободных средств " + leftMoney);
+//        }
+    }}
 }
