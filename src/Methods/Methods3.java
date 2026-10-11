@@ -1,3 +1,6 @@
+package Methods;
+
+//# 10-tasks
 public class Methods3 {
     public static void main(String[] args) {
         sayHello("Pixel");
@@ -17,13 +20,10 @@ public class Methods3 {
 
     }
 
-
     public static void sayHello(String name) {
 
         System.out.println("Привет, " + name + "!");
-        System.out.println("Привет, " + name + "!");
     }
-
 
     public static double findMaxExpense(double[] expenses) {
         double maxFeedExpenseAnimal = 0;
@@ -46,6 +46,6 @@ public class Methods3 {
 
     public static void sayEnjoyMeal(String name){
         System.out.println("Приятного аппетита, " + name + "!");
-        System.out.println("Приятного аппетита, " + name + "!");
+
     }
 }

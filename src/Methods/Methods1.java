@@ -1,3 +1,5 @@
+package Methods;
+
 import java.util.Scanner;
 
 public class Methods1 {
@@ -20,7 +22,8 @@ public class Methods1 {
                 + "еда — " + foodMoney + ", "
                 + "сбережения — " + savings + ".");
     }
-    public static void correctExpenses(int salary, int transportMoney, int foodMoney, int savings){
+
+    public static void correctExpenses(int salary, int transportMoney, int foodMoney, int savings) {
         int expensesSum = transportMoney + foodMoney + savings; // Считаем расходы
         if (expensesSum > salary) { // Проверяем, не превышают ли расходы зарплату
             int lackMoney = expensesSum - salary; // Считаем, сколько не хватает
@@ -35,7 +38,7 @@ public class Methods1 {
                 savings = 0;
             }
             // Печатаем рекомендации
-            System.out.println("Придётся пересмотреть планы, вам не хватает " + lackMoney);
+//            System.out.println("Придётся пересмотреть планы, вам не хватает " + lackMoney);
 //            System.out.println("Рекомендуемые траты: "
 //                    + "еда — " + ... + ", "
 //                    + "сбережения — " + ... + ".");
@@ -43,5 +46,6 @@ public class Methods1 {
 //            System.out.println("В этом месяце дебет с кредитом сошлись!");
 //            System.out.println("Свободных средств " + leftMoney);
 //        }
+//      }
     }}
 }
