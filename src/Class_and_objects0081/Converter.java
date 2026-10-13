@@ -1,12 +1,14 @@
 package Class_and_objects0081;
 
 public class Converter {
-    double rateUSD = 450;
-    double rateEUR = 500;
-    double rateJPY = 3;
+    double rateUSD;
+    double rateEUR;
+    double rateJPY;
 
-    public Converter (double usd, double eur, double jpy){
-
+    public Converter(double usd, double eur, double jpy) {
+       rateUSD = usd;
+       rateEUR = eur;
+       rateJPY = jpy;
     }
 
     void convert(double tenges, int currency) {
