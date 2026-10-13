@@ -7,7 +7,14 @@ public class Book {
     int year;
     boolean isAvailable;
 
-    public Book(String title, String author, int year){
-        boolean isAvailable = true;
+    public Book(String title, String author, int year) {
+
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        isAvailable = true;
+
     }
+
+
 }

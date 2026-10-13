@@ -1,7 +1,22 @@
 public class Hamster {
 
-    public static void main(String[] args) {
-        Hamster homka = new Hamster();
-//        System.out.println("Имя: " + homka.name);
+    String name;
+    int weight;
+    int age;
+
+    public Hamster(int weight) {
+        this.weight = weight;
+    }
+
+    public void eat(int foodWeight) {
+        weight += foodWeight;
+    }
+
+    public void runWheel() {
+        weight -= 1;
+    }
+
+    public void hideSeeds(int seedsWeight) {
+        weight += seedsWeight;
     }
 }

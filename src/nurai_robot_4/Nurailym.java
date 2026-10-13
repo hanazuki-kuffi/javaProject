@@ -10,19 +10,16 @@ public class Nurailym {
     int height;
     String mbti;
 
-
-
-    public static void nuraiFart() {
-        System.out.println("нурай тышат");
+    public Nurailym() {
+        this.name = "apo";
     }
 
-    public static void nuraiEat() {
-        System.out.println("Нурай оборзевшая обжора");
+    public Nurailym(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
-    public Nurailym(String newName) {
-        this.name = newName;
-    }
+
 
 }
 
