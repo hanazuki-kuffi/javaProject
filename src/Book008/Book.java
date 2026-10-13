@@ -16,5 +16,35 @@ public class Book {
 
     }
 
+    void printInfo () {
+        System.out.println("Название: " + title + ", " + "Автор: " + author + ", " + "Год: " + year + ", " + "Доступна: " + isAvailable);
+    }
 
+    void borrowBook(String readerName) {
+
+        if (isAvailable == true) {
+            System.out.println(readerName + " взял(а) книгу " + title);
+            isAvailable = false;
+        }
+        else {
+            System.out.println("Книга " + title + " уже выдана!");
+
+        }
+    }
+    void returnBook() {
+        if (isAvailable == false) {
+            System.out.println("Книга " + title + " возвращена в библиотеку.");
+            isAvailable = true;
+        }
+        else {
+            System.out.println("Книга " + title + " уже на месте.");
+        }
+    }
+
+    boolean isClassic() {
+        if (year == 1950) {
+            return true;
+        }
+        return false;
+    }
 }
