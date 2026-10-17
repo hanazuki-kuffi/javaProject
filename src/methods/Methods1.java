@@ -1,4 +1,4 @@
-package Methods;
+package methods;
 
 import java.util.Scanner;
 
@@ -8,10 +8,13 @@ public class Methods1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Какую зарплату вы получите в этом месяце?");
         int salary = scanner.nextInt();  // зарплата
+
         System.out.println("Сколько планируете потратить на транспорт?");
         int transportMoney = scanner.nextInt();  // транспорт
+
         System.out.println("Сколько запланировано на супермаркеты?");
         int foodMoney = scanner.nextInt();   // продукт
+
         System.out.println("Какую сумму хотите отложить?");
         int savings = scanner.nextInt();  // сбережения
 
@@ -27,7 +30,7 @@ public class Methods1 {
         int expensesSum = transportMoney + foodMoney + savings; // Считаем расходы
         if (expensesSum > salary) { // Проверяем, не превышают ли расходы зарплату
             int lackMoney = expensesSum - salary; // Считаем, сколько не хватает
-            int leftMoney = salary - expensesSum; // Считаем излишек средств
+             // Считаем излишек средств
 
             // Пока не начнёт хватать денег на транспорт — сокращаем траты на 500 тенге
             while ((salary - foodMoney) < transportMoney) {
@@ -38,14 +41,14 @@ public class Methods1 {
                 savings = 0;
             }
             // Печатаем рекомендации
-//            System.out.println("Придётся пересмотреть планы, вам не хватает " + lackMoney);
-//            System.out.println("Рекомендуемые траты: "
-//                    + "еда — " + ... + ", "
-//                    + "сбережения — " + ... + ".");
-//        } else {
-//            System.out.println("В этом месяце дебет с кредитом сошлись!");
-//            System.out.println("Свободных средств " + leftMoney);
-//        }
-//      }
-    }}
+            System.out.println("Придётся пересмотреть планы, вам не хватает " + lackMoney);
+            System.out.println("Рекомендуемые траты: "
+                    + "еда — " + foodMoney + ", "
+                    + "сбережения — " + savings + ".");
+        } else {
+            int leftMoney = salary - expensesSum;;
+            System.out.println("В этом месяце дебет с кредитом сошлись!");
+            System.out.println("Свободных средств " + leftMoney);
+        }
+    }
 }

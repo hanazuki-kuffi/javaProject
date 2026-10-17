@@ -1,4 +1,4 @@
-package Methods;//#9- tasks
+package methods;//#9- tasks
 
 import java.util.Scanner;
 

@@ -8,7 +8,7 @@ public class Main {
         double[] expenses = new double[7];
 
         Scanner scanner = new Scanner(System.in);
-        Converter converter = new Converter(1, 3, 4);// Создайте объект класса Converter
+        Converter converter = new Converter(444.06, 489.32 , 3.81);// Создайте объект класса Converter
 
 
         System.out.println("Сколько денег у вас осталось до зарплаты?");

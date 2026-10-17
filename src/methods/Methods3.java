@@ -1,4 +1,4 @@
-package Methods;
+package methods;
 
 //# 10-tasks
 public class Methods3 {
