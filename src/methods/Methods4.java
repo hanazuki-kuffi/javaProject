@@ -102,9 +102,6 @@ public class Methods4 {
         }
     }
 
-    public static void printAllExpenses(double[] expenses) {
-        System.out.println(Arrays.toString(expenses));
-    }
 
     public static double saveExpense(Scanner scanner, double moneyBeforeSalary, double[] expenses) {
 
@@ -120,6 +117,10 @@ public class Methods4 {
             System.out.println("На вашем счету осталось совсем немного. Стоит начать экономить!");
         }
         return moneyBeforeSalary;
+    }
+
+    public static void printAllExpenses(double[] expenses) {
+        System.out.println(Arrays.toString(expenses));
     }
 
 
