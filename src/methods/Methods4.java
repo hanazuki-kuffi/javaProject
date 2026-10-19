@@ -8,7 +8,6 @@ public class Methods4 {
     public static void main(String[] args) {
 
         double[] expenses = new double[7];
-        printAllExpenses(expenses);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -48,7 +47,6 @@ public class Methods4 {
 
 
 
-
     public static void printMenu() {
         System.out.println("Что вы хотите сделать? ");
         System.out.println("1 - Конвертировать валюту");
@@ -57,6 +55,7 @@ public class Methods4 {
         System.out.println("4 - Показать траты за неделю");
         System.out.println("5 - Показать самую большую сумму расходов за неделю");
         System.out.println("0 - Выход");
+
     }
 
     public static void getAdvice(double moneyBeforeSalary, int daysBeforeSalary) {
@@ -107,6 +106,7 @@ public class Methods4 {
 
         System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
         int day = scanner.nextInt();
+
         System.out.println("Введите размер траты: ");
         double expense = scanner.nextDouble();
 
@@ -131,8 +131,7 @@ public class Methods4 {
                 maxExpense = expenses[i];
             }
         }
-        // Печать должна остаться здесь — для получения максимальной траты нужно вызвать метод
         System.out.println("Самая большая сумма расходов на этой неделе составила " + maxExpense + " тенге");
-        return 0;
+        return maxExpense;
     }
 }
