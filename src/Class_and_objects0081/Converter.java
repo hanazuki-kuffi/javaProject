@@ -1,9 +1,9 @@
 package Class_and_objects0081;
 
 public class Converter {
-    double rateUSD;
-    double rateEUR;
-    double rateJPY;
+    static double rateUSD;
+    static double rateEUR;
+    static double rateJPY;
 
     public Converter(double usd, double eur, double jpy) {
        this.rateUSD = usd;
@@ -11,7 +11,7 @@ public class Converter {
        this.rateJPY = jpy;
     }
 
-    void convert(double tenges, int currency) {
+    public static void convert(double tenges, int currency) {
         if (currency == 1) {
             System.out.println("Ваши сбережения в долларах: " + tenges / rateUSD);
         } else if (currency == 2) {
