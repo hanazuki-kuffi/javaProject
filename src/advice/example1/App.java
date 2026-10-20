@@ -5,6 +5,7 @@ import java.util.Scanner;
 import static advice.example1.DinnerAdvisor.getAdvice;
 
 public class App {
+
     public static void main(String[] args) {
 
         double[] expenses = new double[7];
@@ -84,6 +85,5 @@ public class App {
         System.out.println("5 - Показать самую большую сумму расходов за неделю");
         System.out.println("0 - Выход");
     }
-
 }
 

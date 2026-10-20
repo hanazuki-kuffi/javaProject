@@ -4,28 +4,34 @@ import java.util.Scanner;
 
 public class Methods2 {
 
-        Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            String ghosts = "призраки завтра";
-            System.out.println("Здравствуйте, " + ghosts);
-
+            getCommand();
+            printGreeting();
             getMaxValue();
             getMinValue();
             hamsterWeight();
             getExpenses(new int[] {1, 2, 3, 4, 5});
             getMycity();
+
         }
-        public static void getMenu(){
+        public static void printGreeting() {
+            String ghosts = "призраки завтра";
+            System.out.println("Здравствуйте, " + ghosts);
+
+        }
+
+        public static int getCommand(){
             System.out.println("Что будем делать дальше? 1 - Читать код, 2 - Отдыхать.");
+            Scanner scanner = new Scanner(System.in);
+            int command = scanner.nextInt();
+            return command;
         }
 
         public static void getMaxValue() {
-            getMenu();
-            Scanner scanner = new Scanner(System.in);
 
-            int command = scanner.nextInt();
+            int command = getCommand();
             if (command == 2) {
                 return;
             } else {
@@ -41,10 +47,7 @@ public class Methods2 {
         }
 
         public static void getMinValue() {
-                getMenu();
-            Scanner scanner = new Scanner(System.in);
-
-            int command = scanner.nextInt();
+            getCommand();
 
                 double[] expenses = {100.50, 55.0, 10.6, 150.20, 10.0, 1.0, 15.4};
                 double minExpense = expenses[0];
@@ -58,11 +61,8 @@ public class Methods2 {
 
         public static void hamsterWeight() {
 
-            getMenu();
+            getCommand();
             Scanner scanner = new Scanner(System.in);
-
-            int command = scanner.nextInt();
-
             System.out.println("Сколько весит хомяк Байт?");
             int weight = scanner.nextInt();
             if (weight < 800) {
@@ -76,10 +76,7 @@ public class Methods2 {
 
 
         public static void getExpenses(int[] expenses) {
-            getMenu();
-            Scanner scanner = new Scanner(System.in);
-
-            int command = scanner.nextInt();
+            getCommand();
 
             double sum = 0;
             for (int i = 0; i < expenses.length; i++) {
@@ -90,11 +87,7 @@ public class Methods2 {
 
 
         public static void getMycity() {
-            getMenu();
-            Scanner scanner = new Scanner(System.in);
-
-            int command = scanner.nextInt();
-
+            getCommand();
             String myLoveCity = "мой любимый город!";
             System.out.println("До свидания," + myLoveCity);
     }

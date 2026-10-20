@@ -30,12 +30,10 @@ public class Methods4 {
 
             } else if (command == 4) {
                 printAllExpenses(expenses);// Перенесите обработку команды в метод printAllExpenses, здесь вызовите его
-                for (int i = 0; i < expenses.length; i++) {
-                    System.out.println("День " + (i + 1) + ". Потрачено " + expenses[i] + " тенге");
-                }
 
             } else if (command == 5) {
-                findMaxExpense(expenses);// Перенесите поиск максимальной траты в метод findMaxExpense
+                double  maxExpense = findMaxExpense(expenses);
+                System.out.println("Самая большая сумма расходов на этой неделе составила " + maxExpense + " тенге");;// Перенесите поиск максимальной траты в метод findMaxExpense
             } else if (command == 0) {
                 System.out.println("Выход");
                 break;
@@ -120,7 +118,9 @@ public class Methods4 {
     }
 
     public static void printAllExpenses(double[] expenses) {
-        System.out.println(Arrays.toString(expenses));
+        for (int i = 0; i < expenses.length; i++) {
+            System.out.println("День " + (i + 1) + ". Потрачено " + expenses[i] + " тенге");
+        }
     }
 
 
@@ -131,7 +131,6 @@ public class Methods4 {
                 maxExpense = expenses[i];
             }
         }
-        System.out.println("Самая большая сумма расходов на этой неделе составила " + maxExpense + " тенге");
         return maxExpense;
     }
 }
