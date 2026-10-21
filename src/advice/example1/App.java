@@ -2,7 +2,6 @@ package advice.example1;
 
 import Class_and_objects0081.Converter;
 import java.util.Scanner;
-import static advice.example1.DinnerAdvisor.getAdvice;
 
 public class App {
 
@@ -30,7 +29,7 @@ public class App {
                 int currency = scanner.nextInt();
                 converter.convert(moneyBeforeSalary, currency);
             } else if (command == 2) {
-                getAdvice(moneyBeforeSalary, daysBeforeSalary);
+                dinnerAdvisor.getAdvice(moneyBeforeSalary, daysBeforeSalary);
             } else if (command == 3) {
                 moneyBeforeSalary = saveExpense(scanner, moneyBeforeSalary, expenses);
             } else if (command == 4) {

@@ -3,17 +3,16 @@ package finance_app;
 import java.util.Scanner;
 
 public class ExpensesManager {
-    double[] expenses;
-
+    double[]expenses;
     public ExpensesManager() {
-        double[] expenses = new double[7];
+        this.expenses = new double[7];
     }
 
-    double saveExpense(Scanner scanner, double moneyBeforeSalary, double[] expenses) {
+    double saveExpense(double moneyBeforeSalary, int day) {
 
-        // Печать вопросов и считывание ответов оставьте в классе Practice
+       Scanner scanner = new Scanner(System.in);
         System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
-        int day = scanner.nextInt();
+        day = scanner.nextInt();
         System.out.println("Введите размер траты:");
         double expense = scanner.nextDouble();
         moneyBeforeSalary = moneyBeforeSalary - expense;
@@ -25,13 +24,13 @@ public class ExpensesManager {
         return moneyBeforeSalary;
     }
 
-    void printAllExpenses(double[] expenses) {
+    void printAllExpenses() {
         for (int i = 0; i < expenses.length; i++) {
             System.out.println("День " + (i + 1) + ". Потрачено " + expenses[i] + " тенге");
         }
     }
 
-    double findMaxExpense(double[] expenses) {
+    double findMaxExpense() {
         double maxExpense = 0;
         for (int i = 0; i < expenses.length; i++) {
             if (expenses[i] > maxExpense) {
@@ -40,5 +39,4 @@ public class ExpensesManager {
         }
         return maxExpense;
     }
-
 }
