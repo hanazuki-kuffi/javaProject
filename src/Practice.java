@@ -342,17 +342,17 @@ public class Practice {
         }
     }
 
-    public static void practice19() {
-
-        int flatsNumber = 5; // Количество квартир на этаже
-        int floorNumber = 10; // Количество этажей
-
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= 50; j++) {
-                int currentFlat = (floorNumber - 1) * flatsNumber + 1;
-                System.out.println("Этаж " + i + " квартира " + currentFlat + " — доставлено.");
-            }
-            }
-        }
-    }
+//    public static void practice19() {
+//
+//        int flatsNumber = 5; // Количество квартир на этаже
+//        int floorNumber = 10; // Количество этажей
+//
+//        for (int i = 1; i <= 10; i++) {
+//            for (int j = 1; j <= 50; j++) {
+//                int currentFlat = (floorNumber - 1) * flatsNumber + 1;
+//                System.out.println("Этаж " + i + " квартира " + currentFlat + " — доставлено.");
+//            }
+//            }
+//        }
+//    }
 
