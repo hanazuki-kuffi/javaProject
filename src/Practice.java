@@ -340,7 +340,7 @@ public class Practice {
                 System.out.println("Пробежка" + j);
             }
         }
-    }
+    }}
 
 //    public static void practice19() {
 //
