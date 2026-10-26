@@ -316,31 +316,31 @@ public class Practice {
 //
 //        }
 //        System.out.println("Денег хватит на " + days + " дней.");
+////    }
+//
+//    public static void practice17() {
+//        for (int i = 1; i <= 30; i++) {
+//            System.out.println("День " + i);
+//
+//            for (int a = 1; a <= 3; a++) {
+//                System.out.println("Серия " + a);
+//            }
+//        }
+//        System.out.println("Ура! Вы прокачали и Java, и английский!");
+//
 //    }
-
-    public static void practice17() {
-        for (int i = 1; i <= 30; i++) {
-            System.out.println("День " + i);
-
-            for (int a = 1; a <= 3; a++) {
-                System.out.println("Серия " + a);
-            }
-        }
-        System.out.println("Ура! Вы прокачали и Java, и английский!");
-
-    }
-
-    public static void practice18() {
-        int days = 3;
-        int run = 2;
-
-        for (int i = 1; i <= days; i++) {
-            System.out.println("Day" + i);
-            for (int j = 1; j <= run; j++) {
-                System.out.println("Пробежка" + j);
-            }
-        }
-    }}
+//
+//    public static void practice18() {
+//        int days = 3;
+//        int run = 2;
+//
+//        for (int i = 1; i <= days; i++) {
+//            System.out.println("Day" + i);
+//            for (int j = 1; j <= run; j++) {
+//                System.out.println("Пробежка" + j);
+//            }
+//        }
+//    }}
 
 //    public static void practice19() {
 //
