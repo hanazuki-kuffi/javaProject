@@ -1,6 +1,9 @@
 package lesson7;
 
 public class App {
+
+    public static void main(String[] args) {
+
     long inputGold = 200L;
     byte inputSilver = 39;
     short inputWood = 2005;
@@ -15,14 +18,18 @@ public class App {
             inputHasHelper
     );
 
-    int characterGold = ;
-    int characterSilver = ...
-    double characterWood = ...
-    byte characterHealth = ...
+    int characterGold = (int) characterResources.gold;
+    int characterSilver = characterResources.silver;
+    double characterWood = characterResources.wood;
+    byte characterHealth = (byte) characterResources.health;
     byte characterHelpersNumber;
 
-    // Установка значения characterHelpersNumber в зависимости от значения hasHelper
-        ...
+    if (inputHasHelper) {
+        characterHelpersNumber = 1;
+    } else {
+        characterHelpersNumber = 0;
+    }
+
 
     Character character = new Character(
             characterGold,

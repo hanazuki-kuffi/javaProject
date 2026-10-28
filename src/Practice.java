@@ -20,7 +20,7 @@ public class Practice {
 //        practice16();
 //        practice17();
 //        practice18();
-        practice19();
+//        practice19();
 
     }
 
@@ -348,5 +348,6 @@ public class Practice {
             }
             }
         }
-    }
 
+void main() {
+}
