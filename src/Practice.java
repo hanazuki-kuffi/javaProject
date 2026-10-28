@@ -304,55 +304,49 @@ public class Practice {
             System.out.println("Извините, такой команды пока нет.");
         }
     }
-//    public static void practice16() {
-//        int money = 2500;
-//        int foodPerMoney = 500;
-//        int days = 0;
-//
-//        for (int a = money; a) {
-//            for (int i = days; i <= 15; i -= 3)
-//
-//            System.out.println("На" + days + " - й день останется" + money + "тенге.");
-//
-//        }
-//        System.out.println("Денег хватит на " + days + " дней.");
-////    }
-//
-//    public static void practice17() {
-//        for (int i = 1; i <= 30; i++) {
-//            System.out.println("День " + i);
-//
-//            for (int a = 1; a <= 3; a++) {
-//                System.out.println("Серия " + a);
-//            }
-//        }
-//        System.out.println("Ура! Вы прокачали и Java, и английский!");
-//
-//    }
-//
-//    public static void practice18() {
-//        int days = 3;
-//        int run = 2;
-//
-//        for (int i = 1; i <= days; i++) {
-//            System.out.println("Day" + i);
-//            for (int j = 1; j <= run; j++) {
-//                System.out.println("Пробежка" + j);
-//            }
-//        }
-//    }}
+    public static void practice16() {
+        int money = 2500;
+        int foodPerMoney = 500;
+        int days = 0;
 
-//    public static void practice19() {
-//
-//        int flatsNumber = 5; // Количество квартир на этаже
-//        int floorNumber = 10; // Количество этажей
-//
-//        for (int i = 1; i <= 10; i++) {
-//            for (int j = 1; j <= 50; j++) {
-//                int currentFlat = (floorNumber - 1) * flatsNumber + 1;
-//                System.out.println("Этаж " + i + " квартира " + currentFlat + " — доставлено.");
-//            }
-//            }
-//        }
-//    }
+        }
+    }
+
+    public static void practice17() {
+        for (int i = 1; i <= 30; i++) {
+            System.out.println("День " + i);
+
+            for (int a = 1; a <= 3; a++) {
+                System.out.println("Серия " + a);
+            }
+        }
+        System.out.println("Ура! Вы прокачали и Java, и английский!");
+
+    }
+
+    public static void practice18() {
+        int days = 3;
+        int run = 2;
+
+        for (int i = 1; i <= days; i++) {
+            System.out.println("Day" + i);
+            for (int j = 1; j <= run; j++) {
+                System.out.println("Пробежка" + j);
+            }
+        }
+    }
+
+    public static void practice19() {
+
+        int flatsNumber = 5; // Количество квартир на этаже
+        int floorNumber = 10; // Количество этажей
+
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 50; j++) {
+                int currentFlat = (floorNumber - 1) * flatsNumber + 1;
+                System.out.println("Этаж " + i + " квартира " + currentFlat + " — доставлено.");
+            }
+            }
+        }
+    }
 

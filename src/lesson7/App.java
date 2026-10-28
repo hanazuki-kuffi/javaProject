@@ -1,0 +1,43 @@
+package lesson7;
+
+public class App {
+    long inputGold = 200L;
+    byte inputSilver = 39;
+    short inputWood = 2005;
+    long inputHealth = 97L;
+    boolean inputHasHelper = true;
+
+    Resources characterResources = new Resources(
+            inputGold,
+            inputSilver,
+            inputWood,
+            inputHealth,
+            inputHasHelper
+    );
+
+    int characterGold = ;
+    int characterSilver = ...
+    double characterWood = ...
+    byte characterHealth = ...
+    byte characterHelpersNumber;
+
+    // Установка значения characterHelpersNumber в зависимости от значения hasHelper
+        ...
+
+    Character character = new Character(
+            characterGold,
+            characterSilver,
+            characterWood,
+            characterHealth,
+            characterHelpersNumber
+    );
+
+        System.out.println("Персонаж создан успешно!");
+        System.out.println("Количество золота: " + character.gold);
+        System.out.println("Количество серебра: " + character.silver);
+        System.out.println("Количество дерева: " + character.wood);
+        System.out.println("Здоровье: " + character.health);
+        System.out.println("Количество помощников: " + character.helpersNumber);
+        System.out.println("Навстречу приключениям!");
+}
+}
