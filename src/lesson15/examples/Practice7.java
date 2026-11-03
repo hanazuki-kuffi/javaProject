@@ -12,11 +12,21 @@ public class Practice7 {
         byte num2 = -12;
         maxValueByte(num1, num2);
 
+        short digit1 = 12;
+        short digit2 = -12;
+        minValueShort(digit1, digit2);
+
     }
 
     public static void maxValueByte(byte a, byte b) {
 
-        int maxC = Integer.max((int)a, (int) b);
+        int maxC = Integer.max((int) a, (int)b);
         System.out.println(maxC);
+    }
+
+    public static void minValueShort(short a, short b) {
+
+        int minC = Integer.min((int) a, (int) b);
+        System.out.println(minC);
     }
 }
