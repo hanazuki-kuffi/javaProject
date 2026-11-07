@@ -13,7 +13,7 @@ public class ArrayList3 {
         expenses.add(74.1);
         expenses.add(45.0);
 
-        double maxExpense = 0;
+        double maxExpense = expenses.get(0);
         for (int i = 0; i < expenses.size(); i++) {
             if(expenses.get(i) > maxExpense) {
                 maxExpense = expenses.get(i);
