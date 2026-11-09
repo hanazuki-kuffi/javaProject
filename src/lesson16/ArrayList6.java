@@ -29,14 +29,14 @@ public class ArrayList6 {
             }
             else if(command == 2) {
 
-                System.out.println("Add animal in the list: ");
+                System.out.println("Какое животное хотите добавить?:  ");
                 String animal = scanner.next();
                 animals.add(animal);
             }
             else if (command == 3) {
 
 
-                System.out.println("Which animal's want to remove? ");
+                System.out.println("Какое животное нужно удалить?: ");
                 String removeAnimal = scanner.next();
 
                 if (!animals.isEmpty()) {
@@ -50,7 +50,19 @@ public class ArrayList6 {
                 System.out.println("Все животные перевезены в другой зоопарк. Список пуст.");
             }
             else if  (command == 5) {
+                System.out.println("Какое животное вы хотите увидеть в зоопарке?: ");
+                String animal = scanner.next();
 
+                if (animals.contains(animal)) {
+                    System.out.println(animal + " на месте! Приходите посмотреть.");
+                }
+                else {
+                    System.out.println("Такого животного сейчас нет в нашем зоопарке.");
+                }
+            }
+            else {
+                System.out.println("Exit");
+                break;
             }
         }
     }
