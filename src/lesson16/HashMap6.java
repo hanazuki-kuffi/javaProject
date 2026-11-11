@@ -50,7 +50,8 @@ public class HashMap6 {
             else if (command == 2) {
                 System.out.println("Добавьте свою любимую группу");
                 System.out.println("Введите её название: ");
-                String nameGroup = scanner.next(); //???
+                String nameGroup = scanner.nextLine(); //???
+                nameGroup = scanner.nextLine();
 
                 System.out.println("Введите год основания");
                 Integer bornYear = scanner.nextInt(); //
