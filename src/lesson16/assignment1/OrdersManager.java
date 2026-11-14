@@ -3,6 +3,7 @@
 //import java.util.ArrayList;
 //import java.util.HashMap;
 //
+//
 //public class OrdersManager {
 //
 //    HashMap<String, ArrayList<Double>> customersOrders;
@@ -55,13 +56,11 @@
 //        }
 //        return sum;
 //    }
-//}
-//    }
 //
 //    void printCustomerOrders(String customerName) {
 //        if (customersOrders.containsKey(customerName)) { // Проверьте, есть ли указанный ключ в таблице
-//            System.out.println("Заказы " + customerName + ":");
-//            System.out.println(customersOrders.get(customerName));
+//        System.out.println("Заказы " + customerName + ":");
+//        System.out.println(customersOrders.get(customerName));
 //        }
 //    }
 //
@@ -70,14 +69,17 @@
 //        String customerName = "";
 //
 //        for (String name : customersOrders.keySet()) {
-//            for (Double order :) {
-//                {
-//
+//            for (Double order : customersOrders.get(name)) {
+//                if (maxOrder < order) {
+//                    maxOrder = order;
+//                    customerName = name;
 //                }
+//
+//            }
 //                return customerName;
 //            }
-//
-//            void removeUnprofitableOrders() {
+
+//            void removeUnprofitableOrders () {
 //                ArrayList<String> names = new ArrayList<>();
 //
 //                for (String customer : customersOrders.keySet()) {
@@ -87,15 +89,11 @@
 //                double ordersSum = 0;
 //                for ()
 //
-//                if (ordersSum < 5000) {
-//                ...
-//                }
+//                    if (ordersSum < 5000) {
+//                    ...
+//                    }
 //            }
 //
 //            for ... // Удалите из хеш-таблицы тех, чьи расходы не превышают 5000
 //
 //            System.out.println("Клиента " + name + " больше нет в таблице.");
-//        }
-//    }
-//}
-

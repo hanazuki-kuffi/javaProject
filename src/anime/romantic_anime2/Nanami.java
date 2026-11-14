@@ -8,6 +8,5 @@ public class Nanami {
     public static void main(String[] args) {
 
         Kaguia kaguia = new Kaguia();
-        kaguia.
     }
 }
