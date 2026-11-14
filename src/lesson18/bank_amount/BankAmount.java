@@ -7,12 +7,14 @@ public class BankAmount {
         return moneyAmount;
     }
 
+    public void setMoneyAmount(long newMoneyAmount) {
+        moneyAmount = newMoneyAmount;
+    }
+
     public void withdrawAll() {
-        System.out.println("Со счёта снято " + moneyAmount + " тг.");
+        System.out.println("Со счёта снято " +  moneyAmount + " тг.");
         moneyAmount -= getMoneyAmount();
     }
 
-    public long setMoneyAmount(long newMoneyAmount) {
-        return moneyAmount = newMoneyAmount;
-    }
+
 }
