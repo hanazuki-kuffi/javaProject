@@ -6,5 +6,10 @@ public class Book {
 
     public Book(String title) {
        this.title = title;
+        System.out.println("Создали книгу с параметром");
+    }
+
+    public Book() {
+        System.out.println("Создали книгу без параметра");
     }
 }
