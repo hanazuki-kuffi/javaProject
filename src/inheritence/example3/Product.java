@@ -1,4 +1,4 @@
-package lesson18.product;
+package inheritence.example3;
 
 public class Product {
 

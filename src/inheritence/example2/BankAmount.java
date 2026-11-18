@@ -1,4 +1,4 @@
-package lesson18.bank_amount;
+package inheritence.example2;
 
 public class BankAmount {
     private long moneyAmount;
