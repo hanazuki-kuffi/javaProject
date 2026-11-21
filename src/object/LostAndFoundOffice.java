@@ -6,13 +6,22 @@ public class LostAndFoundOffice {
 
     ArrayList<Object> things = new ArrayList<>();
 
-    public boolean put(Object element) {
-        return true;
+    public void put(Object element) {
+        things.add(element);
     }
 
     public boolean check(Object target) {
-        return false;
+
+        if (target == null) {
+            return false;
+        }
+
+        for (Object object : things) { // логика проверки вещи в списке
+            if (object.equals(target)) {
+                return true;
+            }
+        }
+
+        return true;
     }
-
-
 }
