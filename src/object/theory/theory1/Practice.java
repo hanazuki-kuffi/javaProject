@@ -1,4 +1,4 @@
-package object.theory;
+package object.theory.theory1;
 
 public class Practice {
 
