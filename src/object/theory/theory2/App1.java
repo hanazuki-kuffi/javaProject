@@ -17,6 +17,10 @@ public class App1 {
         System.out.println(book1);
         System.out.println(book2);
 
+        System.out.println(book1.getClass());
+        System.out.println(book2.getClass().getSimpleName());
+
+
 //        boolean result2 = book1 == book2;
 //        System.out.println(result2); /// false
 
@@ -42,12 +46,12 @@ class Book {
         this.pagesNumber = pagesNumber;
     }
 
-    @Override
-    public String toString() {
-//        return (title + " " + author + " " + pagesNumber);
-        return "Info {" +
-                "title = " + title + ", author = " + author + ", pagesNumber = " + pagesNumber  + "}";
-    }
+//    @Override
+//    public String toString() {
+////        return (title + " " + author + " " + pagesNumber);
+//        return "Info {" +
+//                "title = " + title + ", author = " + author + ", pagesNumber = " + pagesNumber  + "}";
+//    }
 
     @Override
     public boolean equals(Object object) {
